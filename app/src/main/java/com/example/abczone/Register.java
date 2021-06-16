@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class Register extends AppCompatActivity {
-    EditText mFullName,mEmail,mPassword,mPhone;
+    EditText mFullName,mEmail,mPassword,mPhone, mConfirmPassword;
     Button mRegisterBtn;
     TextView mLoginBtn;
     FirebaseAuth firebaseAuth;
@@ -35,6 +35,7 @@ public class Register extends AppCompatActivity {
         mFullName = findViewById(R.id.Name);
         mEmail = findViewById(R.id.Email);
         mPassword = findViewById(R.id.Password);
+        mConfirmPassword= findViewById(R.id.ConfirmPassword);
         mRegisterBtn = findViewById(R.id.SignUP);
         mLoginBtn=findViewById(R.id.Login);
         firebaseAuth = FirebaseAuth.getInstance();
@@ -63,6 +64,9 @@ public class Register extends AppCompatActivity {
                     mEmail.setError("Password Must be >=6  characters");
                     return;
                 }
+                if(!password.equals(mConfirmPassword)){
+                    mPassword.setError("Password not match");
+                }
                 progressBar.setVisibility(View.VISIBLE);
 
                 //Regjistrimi i userit ne firebase
@@ -82,11 +86,10 @@ public class Register extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if (task.isSuccessful()) {
                                                 Log.d("Sucess", "User profile updated.");
+                                                startActivity(new Intent(getApplicationContext(),MainActivity.class));
                                             }
                                         }
                                     });
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-
                         }
                         else{
                             Toast.makeText(Register.this, "Error"+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
