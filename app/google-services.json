@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "218546733243",
+    "project_id": "abczone-68e45",
+    "storage_bucket": "abczone-68e45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218546733243:android:7ce4d7c332c1536ba0e99e",
+        "android_client_info": {
+          "package_name": "com.example.abczone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218546733243-hgrc894rkuacc7rfbagc0i8vl9vhmev3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnSfi5dj2N-SPnY_RlVIr6IYNSvvcdztI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218546733243-hgrc894rkuacc7rfbagc0i8vl9vhmev3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
