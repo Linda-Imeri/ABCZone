@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,91 +21,124 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.FirebaseDatabase;
 
-public class Register extends AppCompatActivity {
-    EditText mFullName,mEmail,mPassword,mPhone, mConfirmPassword;
-    Button mRegisterBtn;
-    TextView mLoginBtn;
-    FirebaseAuth firebaseAuth;
-    ProgressBar progressBar;
+public class Register extends AppCompatActivity implements View.OnClickListener {
+
+    private EditText email,password,confirmPassword,childName;
+    private ProgressBar progressBar;
+    private Button register;
+    private TextView login;
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        mFullName = findViewById(R.id.Name);
-        mEmail = findViewById(R.id.Email);
-        mPassword = findViewById(R.id.Password);
-        mConfirmPassword= findViewById(R.id.ConfirmPassword);
-        mRegisterBtn = findViewById(R.id.SignUP);
-        mLoginBtn=findViewById(R.id.Login);
-        firebaseAuth = FirebaseAuth.getInstance();
-        progressBar = findViewById(R.id.progressBar);
 
-        if(firebaseAuth.getCurrentUser()!=null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+
+        register=(Button) findViewById(R.id.register);
+        register.setOnClickListener(this);
+
+        login=(TextView) findViewById(R.id.login);
+        login.setOnClickListener(this);
+
+        email=(EditText) findViewById(R.id.Email);
+        childName=(EditText) findViewById(R.id.childName);
+        password=(EditText) findViewById(R.id.Password);
+        confirmPassword=(EditText) findViewById(R.id.ConfirmPassword);
+
+        progressBar=(ProgressBar) findViewById(R.id.progressBar);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.register:
+                registerUser();
+                break;
+
+            case R.id.login:
+                startActivity(new Intent(this,Login.class));
+                break;
         }
-        mRegisterBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String email = mEmail.getText().toString().trim();
-                String password = mPassword.getText().toString().trim();
+    }
 
-                if (TextUtils.isEmpty(email)) {
-                    mEmail.setError("Email is Required");
-                    return;
-                }
+    private void registerUser() {
+        String Name=childName.getText().toString().trim();
+        String Email=email.getText().toString().trim();
+        String Password=password.getText().toString().trim();
+        String ConfirmPassword=confirmPassword.getText().toString().trim();
 
-                if (TextUtils.isEmpty(password)) {
-                    mEmail.setError("Password is Required");
-                    return;
-                }
-                if (password.length() < 6) {
-                    mEmail.setError("Password Must be >=6  characters");
-                    return;
-                }
-                if(!password.equals(mConfirmPassword)){
-                    mPassword.setError("Password not match");
-                }
-                progressBar.setVisibility(View.VISIBLE);
+        if(Name.isEmpty()){
+            childName.setError("Name is required!");
+            childName.requestFocus();
+            return;
+        }
 
-                //Regjistrimi i userit ne firebase
-                firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        if(Email.isEmpty()){
+            email.setError("Email is required!");
+            email.requestFocus();
+            return;
+        }
+
+        if(!Patterns.EMAIL_ADDRESS.matcher(Email).matches()){
+            email.setError("Please write valid email!");
+            email.requestFocus();
+            return;
+        }
+
+        if(Password.isEmpty()){
+            password.setError("Please write valid email!");
+            password.requestFocus();
+            return;
+        }
+
+        if(Password.length()<6){
+            password.setError("Password length must be more then 6 characters!");
+            password.requestFocus();
+            return;
+        }
+
+        progressBar.setVisibility(View.VISIBLE);
+        mAuth.createUserWithEmailAndPassword(Email,Password)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(Register.this, "User Created.", Toast.LENGTH_SHORT).show();
-                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                                    .setDisplayName(mFullName.getText().toString())
-                                    .build();
+                        if(task.isSuccessful()) {
+                            User user = new User(Email,Name);
 
-                            user.updateProfile(profileUpdates)
-                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            if (task.isSuccessful()) {
-                                                Log.d("Sucess", "User profile updated.");
-                                                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                            }
-                                        }
-                                    });
+                            FirebaseDatabase.getInstance().getReference("Users")
+                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+
+
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(Register.this, "User Created.", Toast.LENGTH_SHORT).show();
+                                        progressBar.setVisibility(View.VISIBLE);
+
+                                        //Redirect to Main
+
+                                    }
+                                    else{
+                                        Toast.makeText(Register.this,"Failed",Toast.LENGTH_LONG).show();
+                                        progressBar.setVisibility(View.GONE);
+                                    }
+                                }
+
+                            });
                         }
                         else{
-                            Toast.makeText(Register.this, "Error"+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this,"Failed to register",Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
 
-            }
-        });
-        mLoginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Login.class));
-            }
-        });
     }
 }
