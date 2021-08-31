@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f2ed"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:backgroundTint="#000000"
+                android:scaleType="fitStart"
+                android:src="@drawable/background_animals" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-125dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="#FFFFFF">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:padding="25dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/read4"
+                android:layout_width="132dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_style"
+                android:padding="2dp"
+                android:text="Read" />
+
+            <ImageView
+                android:layout_width="157dp"
+                android:layout_height="149dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="2dp"
+                android:scaleType="fitEnd"
+
+                android:src="@drawable/bear_brushing" />
+
+
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/abc" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/animals"  />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/fruits"  />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/colors" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/sports" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="-20dp"
+            android:padding="10dp"
+            android:text="Learn and have fun"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="180dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#a84432"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Books"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif"
+                    android:padding="25dp"/>
+
+                <Button
+                    android:id="@+id/audio_book"
+                    android:layout_width="132dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_style"
+                    android:padding="2dp"
+                    android:text="Listen" />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/story_teller"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="180dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/orange"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="25dp"/>
+
+                <Button
+                    android:layout_width="132dp"
+                    android:layout_height="40dp"
+                    android:text="Listen"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_style"
+                    android:padding="2dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:src="@drawable/penguin_music"
+                android:layout_marginTop="-20dp"
+                android:layout_marginRight="-10dp"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="390dp"
+            android:layout_height="180dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#a6a832"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short Movies"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif"
+                    android:padding="25dp"/>
+
+                <Button
+                    android:id="@+id/read3"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_style"
+                    android:padding="10dp"
+                    android:text="Watch" />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bear_videos"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private Button Login;
 
     private FirebaseAuth mAuth;
-    private ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         register=(TextView) findViewById(R.id.join);
         register.setOnClickListener(this);
 
-        forgotPassword=(TextView) findViewById(R.id.forgotPassword);
+        forgotPassword=(TextView) findViewById(R.id.ForgotPassword);
         forgotPassword.setOnClickListener(this);
 
         Login=(Button) findViewById(R.id.Login);
@@ -45,7 +45,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         loginEmail=(EditText) findViewById(R.id.LoginEmail);
         loginPassword=(EditText) findViewById(R.id.LoginPassword);
 
-        progressBar=(ProgressBar) findViewById(R.id.progressBar);
+
 
         mAuth=FirebaseAuth.getInstance();
     }
@@ -60,7 +60,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             case R.id.Login:
                 userLogin();
 
-            case R.id.forgotPassword:
+            case R.id.ForgotPassword:
                 startActivity(new Intent(this,ForgotPassword.class));
                 break;
         }
@@ -88,28 +88,19 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             loginPassword.requestFocus();
             return;
         }
-        progressBar.setVisibility(View.VISIBLE);
+
 
         mAuth.signInWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
-                    if(user.isEmailVerified()){
-                        //Redirect to main
-                        startActivity(new Intent(Login.this,MainActivity.class));
-                    }
-                    else{
-                        user.sendEmailVerification();
-                        Toast.makeText(Login.this,"Check your email to verify your account",Toast.LENGTH_LONG).show();
-
+                        startActivity(new Intent(Login.this,Home.class));
                     }
 
-                }
                 else{
                     Toast.makeText(Login.this,"Failed",Toast.LENGTH_LONG).show();
-                    progressBar.setVisibility(View.GONE);
+
                 }
             }
         });

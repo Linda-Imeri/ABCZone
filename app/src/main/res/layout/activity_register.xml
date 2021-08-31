@@ -7,100 +7,88 @@
     android:background="@color/orange"
     tools:context=".Register">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/panda"
-        />
-
     <LinearLayout
         android:layout_width="350dp"
         android:layout_height="524dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="190dp"
-        android:paddingTop="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
+        android:layout_marginTop="160dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/round_corner"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp">
+
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="20dp"
             android:text="@string/register"
-            android:textColor="#542DB8"
-            android:textSize="30sp"
-            />
-
-        <EditText
-            android:id="@+id/childName"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:ems="10"
-            android:hint="Child name"
-            android:inputType="textPersonName" />
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
         <EditText
             android:id="@+id/Email"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
             android:ems="12"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            />
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
         <EditText
             android:id="@+id/Password"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
             android:ems="12"
             android:hint="@string/password"
             android:inputType="textPassword"
-            />
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
         <EditText
             android:id="@+id/ConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
             android:ems="12"
             android:hint="@string/confirmpassword"
             android:inputType="textPassword"
-           />
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
         <Button
-            android:id="@+id/register"
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
             android:text="@string/sign_up" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Already have an account ?" />
-
-        <TextView
-            android:id="@+id/login"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-
-             />
-
-
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/panda_sitting" />
 
 
 </RelativeLayout>

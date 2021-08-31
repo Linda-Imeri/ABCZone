@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AudioBooks extends AppCompatActivity {
+public class AudioBooks extends AppCompatActivity implements View.OnClickListener {
     private Button read1;
 
     @Override
@@ -15,12 +15,12 @@ public class AudioBooks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_audio_books);
 
-        read1=(Button) findViewById(R.id.read1);
-        read1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AudioBooks.this,MainActivity.class));
-            }
-        });
+    }
+
+    @Override
+    public void onClick(View v){
+        Intent intent = new Intent(AudioBooks.this, ListenAudioBooks.class);
+        intent.putExtra("intVariableName", v.getId()); //where v is button that is cliked, you will find it as a parameter to onClick method
+        startActivity(intent);
     }
 }
