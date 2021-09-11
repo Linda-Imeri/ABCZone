@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Search"
+            android:icon="@drawable/search"
+            android:id="@+id/search"
+            />
+        <item
+            android:title="Favorite"
+            android:icon="@drawable/favorite"
+            android:id="@+id/favorite"
+            />
+        <item
+            android:title="Homes"
+            android:icon="@drawable/home"
+            android:id="@+id/Homes"
+            />
+
+    </group>
+        <item android:title="">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:title="Setting"
+                        android:icon="@drawable/search"
+                        android:id="@+id/setting"
+                        />
+                    <item
+                        android:title="Support"
+                        android:icon="@drawable/favorite"
+                        android:id="@+id/support"
+                        />
+                </group>
+            </menu>
+        </item>
+</menu>

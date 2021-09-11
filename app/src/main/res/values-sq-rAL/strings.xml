@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ABCZone</string>
+    <string name="password">Passwordi</string>
+    <string name="register">Registeri</string>
+    <string name="email">Emaili</string>
+    <string name="sign_up">Sign Upi</string>
+    <string name="button">Buttoni</string>
+    <string name="already_have_an_account_login_here">Hajde Already have an account ? Login here</string>
+    <string name="confirmpassword">ConfirmPasswordin</string>
+    <string name="forgot_password">Forgot Passwordin ?</string>
+    <string name="login">Logini</string>
+    <string name="navigation_open">Open navigation draweri</string>
+    <string name="navigation_close">Close navigation draweri</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragmenti</string>
+    <string name="read">Lexo</string>
+    <string name="stories">Storjet</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+</resources>

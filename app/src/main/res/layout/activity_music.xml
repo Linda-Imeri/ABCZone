@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Music">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:backgroundTint="#000000"
+                android:scaleType="fitStart"
+                android:src="@drawable/background_music" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-125dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="#FFFFFF">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Songs"
+                android:textSize="30sp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:textAllCaps="true"
+                android:padding="10dp"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/orange"
+                android:layout_margin="20dp">
+
+                <Button
+                    android:id="@+id/play1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/play_icon"
+                    android:padding="20dp"
+                     />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/panda_sitting"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-10dp"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/orange"
+                android:layout_margin="20dp">
+
+                <Button
+                    android:id="@+id/play2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/play_icon"
+                    android:padding="20dp"
+                    />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/panda_sitting"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-10dp"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/orange"
+                android:layout_margin="20dp">
+
+                <Button
+                    android:id="@+id/play3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/play_icon"
+                    android:padding="20dp"
+                    />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/panda_sitting"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-10dp"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/orange"
+                android:layout_margin="20dp">
+
+                <Button
+                    android:id="@+id/play4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/play_icon"
+                    android:padding="20dp"
+                    />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/panda_sitting"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-10dp"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

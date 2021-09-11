@@ -25,6 +25,15 @@
                 android:backgroundTint="#000000"
                 android:scaleType="fitStart"
                 android:src="@drawable/background_animals" />
+
+            <Button
+                android:id="@+id/changeLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -56,7 +65,7 @@
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/button_style"
                 android:padding="2dp"
-                android:text="Read" />
+                android:text="@string/read" />
 
             <ImageView
                 android:layout_width="157dp"
@@ -200,6 +209,7 @@
                     android:padding="25dp"/>
 
                 <Button
+                    android:id="@+id/listen_music"
                     android:layout_width="132dp"
                     android:layout_height="40dp"
                     android:text="Listen"

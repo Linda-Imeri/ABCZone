@@ -9,22 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_home_24"
-                android:padding="15dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"/>
-        </RelativeLayout>
-
 
 
         <RelativeLayout
@@ -37,6 +22,16 @@
                 android:backgroundTint="#000000"
                 android:scaleType="fitStart"
                 android:src="@drawable/background_animals" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:text="@string/stories"
+                android:textAllCaps="true"
+                android:textSize="30sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -47,16 +42,6 @@
             android:background="@drawable/round_corner"
             android:backgroundTint="#FFFFFF">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stories"
-                android:textSize="30sp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="30dp"
-                android:textAllCaps="true"
-                android:padding="10dp"/>
 
         </RelativeLayout>
 
@@ -69,7 +54,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/teal_700"
+                android:background="@color/orange"
                 android:layout_margin="20dp">
 
                 <TextView
@@ -105,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="20dp"
-            android:background="@color/orange">
+            android:background="#a84432">
 
             <ImageView
                 android:layout_width="120dp"
@@ -143,7 +128,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/teal_700"
+                android:background="#a6a832"
                 android:layout_margin="20dp">
 
                 <TextView
@@ -167,7 +152,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/ic_baseline_home_24"
+                android:src="@drawable/panda_sitting"
                 android:layout_marginTop="-40dp"
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
@@ -236,7 +221,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/ic_baseline_home_24"
+                android:src="@drawable/kawaii"
                 android:layout_marginTop="-40dp"
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
@@ -245,7 +230,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_margin="20dp"
-            android:background="@color/orange">
+            android:background="#a84432">
 
             <ImageView
                 android:layout_width="120dp"
