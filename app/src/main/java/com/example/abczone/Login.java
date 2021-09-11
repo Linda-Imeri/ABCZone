@@ -77,7 +77,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if(Email.isEmpty()){
             loginEmail.setError("Email is required!");
             loginEmail.requestFocus();
-            return;a
+            return;
         }
 
         if(!Patterns.EMAIL_ADDRESS.matcher(Email).matches()){
