@@ -27,6 +27,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     private FirebaseAuth mAuth;
 
+    RelativeLayout rel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,5 +105,17 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 }
             }
         });
+        
+        
+                rel=findViewById(R.id.rel);
+        Login=findViewById(R.id.Login);
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar snack=Snackbar.make(rel, "You have been logged in! ",Snackbar.LENGTH_LONG);
+                snack.show();
+            }
+        });
+
     }
 }
