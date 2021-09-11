@@ -59,7 +59,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             case R.id.join:
                 startActivity(new Intent(this,Register.class));
                 break;
-            
+
             case R.id.Login:
                 userLogin();
 
@@ -77,7 +77,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if(Email.isEmpty()){
             loginEmail.setError("Email is required!");
             loginEmail.requestFocus();
-            return;
+            return;a
         }
 
         if(!Patterns.EMAIL_ADDRESS.matcher(Email).matches()){
@@ -98,6 +98,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
+                    Snackbar snack=Snackbar.make(rel, "You have been logged in! ",Snackbar.LENGTH_LONG);
+                    snack.show();
                         startActivity(new Intent(Login.this,MainZone.class));
                     }
 
@@ -107,17 +109,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 }
             }
         });
-        
-        
-                rel=findViewById(R.id.rel);
-        Login=findViewById(R.id.Login);
-        Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar snack=Snackbar.make(rel, "You have been logged in! ",Snackbar.LENGTH_LONG);
-                snack.show();
-            }
-        });
+
+
+
+
 
     }
 }
