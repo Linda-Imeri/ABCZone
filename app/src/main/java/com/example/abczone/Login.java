@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -23,8 +25,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
-    private TextView register,forgotPassword;
-    private EditText loginEmail,loginPassword;
+    private TextView register, forgotPassword;
+    private EditText loginEmail, loginPassword;
     private Button Login;
 
     private FirebaseAuth mAuth;
@@ -36,83 +38,85 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        register=(TextView) findViewById(R.id.join);
+        register = (TextView) findViewById(R.id.join);
         register.setOnClickListener(this);
 
-        forgotPassword=(TextView) findViewById(R.id.ForgotPassword);
+        forgotPassword = (TextView) findViewById(R.id.ForgotPassword);
         forgotPassword.setOnClickListener(this);
 
-        Login=(Button) findViewById(R.id.Login);
+        Login = (Button) findViewById(R.id.Login);
         Login.setOnClickListener(this);
 
-        loginEmail=(EditText) findViewById(R.id.LoginEmail);
-        loginPassword=(EditText) findViewById(R.id.LoginPassword);
+        loginEmail = (EditText) findViewById(R.id.LoginEmail);
+        loginPassword = (EditText) findViewById(R.id.LoginPassword);
 
 
-
-        mAuth=FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.join:
-                startActivity(new Intent(this,Register.class));
+                startActivity(new Intent(this, Register.class));
                 break;
 
             case R.id.Login:
                 userLogin();
 
             case R.id.ForgotPassword:
-                startActivity(new Intent(this,ForgotPassword.class));
+                startActivity(new Intent(this, ForgotPassword.class));
                 break;
         }
     }
 
     private void userLogin() {
-        String Email=loginEmail.getText().toString().trim();
-        String Password=loginPassword.getText().toString().trim();
+        String Email = loginEmail.getText().toString().trim();
+        String Password = loginPassword.getText().toString().trim();
 
 
-        if(Email.isEmpty()){
+        if (Email.isEmpty()) {
             loginEmail.setError("Email is required!");
             loginEmail.requestFocus();
             return;
         }
 
-        if(!Patterns.EMAIL_ADDRESS.matcher(Email).matches()){
+        if (!Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
             loginEmail.setError("Please write valid email!");
             loginEmail.requestFocus();
             return;
         }
 
-        if(Password.isEmpty()){
+        if (Password.isEmpty()) {
             loginPassword.setError("Password is required!");
             loginPassword.requestFocus();
             return;
         }
 
 
-        mAuth.signInWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        mAuth.signInWithEmailAndPassword(Email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    Snackbar snack=Snackbar.make(rel, "You have been logged in! ",Snackbar.LENGTH_LONG);
+                    Snackbar snack = Snackbar.make(rel, "You have been logged in! ", Snackbar.LENGTH_LONG);
                     snack.show();
-                        startActivity(new Intent(Login.this,MainZone.class));
-                    }
-
-                else{
-                    Toast.makeText(Login.this,"Failed",Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(Login.this, MainZone.class));
+                } else {
+                    Toast.makeText(Login.this, "Failed", Toast.LENGTH_LONG).show();
 
                 }
             }
+
+
         });
 
 
+    }
 
-
-
+    public void TopToAnimate(View view) {
+        Button button = (Button) findViewById(R.id.button);
+        final Animation animation = AnimationUtils.loadAnimation(this, R.anim.bounce);
+        button.startAnimation(animation);
     }
 }
