@@ -1,24 +1,14 @@
 package com.example.abczone;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
-import android.graphics.drawable.DrawableWrapper;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     TextView appname;
@@ -29,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        appname = findViewById(R.id.appname);
+        appname = findViewById(R.id.welcome);
         lottie = findViewById(R.id.lottie);
 
         appname.animate().translationY(-1400).setDuration(2700).setStartDelay(0);
@@ -41,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), Login.class);
                 startActivity(i);
             }
-        }, 50000);
+        }, 2000);
     }
 }
 
