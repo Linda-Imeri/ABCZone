@@ -1,22 +1,22 @@
 <resources>
     <string name="app_name">ABCZone</string>
-    <string name="password">Password</string>
-    <string name="register">Register</string>
+    <string name="password">Fjalëkalimi</string>
+    <string name="register">Regjistrohu</string>
     <string name="email">Email</string>
-    <string name="sign_up">Sign Up</string>
+    <string name="sign_up">Shkycu</string>
     <string name="button">Button</string>
-    <string name="already_have_an_account_login_here">Already have an account ? Login here</string>
-    <string name="confirmpassword">ConfirmPassword</string>
-    <string name="forgot_password">Forgot Password ?</string>
-    <string name="login">Login</string>
-    <string name="navigation_open">Open navigation drawer</string>
-    <string name="navigation_close">Close navigation drawer</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
+    <string name="already_have_an_account_login_here">Posedoni një llogari ? Identifikohu këtu</string>
+    <string name="confirmpassword">Konfirmo Fjalëkalimin</string>
+    <string name="forgot_password">Keni harruar fjalëkalimin ?</string>
+    <string name="login">Identifikohu</string>
+    <string name="navigation_open">Hap sirtarin e navigimit</string>
+    <string name="navigation_close">Mbyll sirtarin e navigimit</string>
+    <string name="open">Hap</string>
+    <string name="close">Mbyll</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="read">Read</string>
-    <string name="stories">Stories</string>
+    <string name="hello_blank_fragment">Pershendetje fragment bosh</string>
+    <string name="read">Lexo</string>
+    <string name="stories">Tregime</string>
     <string name="abczone">ABCZone</string>
-    <string name="best_way_to_learn_english_with_your_child">Best way to learn english with your child</string>
+    <string name="best_way_to_learn_english_with_your_child">Mënyra më e mirë për të mësuar anglisht me fëmijën tuaj</string>
 </resources>

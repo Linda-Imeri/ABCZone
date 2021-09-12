@@ -17,7 +17,7 @@ public class Animals extends AppCompatActivity {
 
         ImageView click1 = (ImageView) findViewById(R.id.Cat);
         ImageView click2 = (ImageView) findViewById(R.id.Dog);
-        ImageView click3 = (ImageView) findViewById(R.id.Cow);
+        ImageView click3 = (ImageView) findViewById(R.id.cow);
         ImageView click4 = (ImageView) findViewById(R.id.Lion);
         ImageView click5 = (ImageView) findViewById(R.id.Tiger);
         ImageView click6 = (ImageView) findViewById(R.id.Elephant);
@@ -40,7 +40,7 @@ public class Animals extends AppCompatActivity {
                     case R.id.Dog:
                         mp2.start();
                         break;
-                    case R.id.Cow:
+                    case R.id.cow:
                         mp3.start();
                         break;
                     case R.id.Lion:
