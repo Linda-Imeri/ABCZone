@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(getApplicationContext(), Login.class);
+                Intent i = new Intent(getApplicationContext(), MainZone.class);
                 startActivity(i);
             }
-        }, 2000);
+        }, 6000);
     }
 }
 

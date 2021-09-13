@@ -57,12 +57,18 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.join:
-                startActivity(new Intent(this, Register.class));
-                break;
+
 
             case R.id.Login:
+
+                //final Animation animation = AnimationUtils.loadAnimation(this, R.anim.bounce);
+                //Login.startAnimation(animation);
                 userLogin();
+                break;
+
+            case R.id.join:
+                startActivity(new Intent(this,Register.class));
+                break;
 
             case R.id.ForgotPassword:
                 startActivity(new Intent(this, ForgotPassword.class));
@@ -99,8 +105,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    Snackbar snack = Snackbar.make(rel, "You have been logged in! ", Snackbar.LENGTH_LONG);
-                    snack.show();
+                   // Snackbar snack = Snackbar.make(rel, "You have been logged in! ", Snackbar.LENGTH_LONG);
+                    //snack.show();
                     startActivity(new Intent(Login.this, MainZone.class));
                 } else {
                     Toast.makeText(Login.this, "Failed", Toast.LENGTH_LONG).show();
@@ -114,9 +120,5 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-    public void TopToAnimate(View view) {
-        Button button = (Button) findViewById(R.id.button);
-        final Animation animation = AnimationUtils.loadAnimation(this, R.anim.bounce);
-        button.startAnimation(animation);
-    }
+
 }

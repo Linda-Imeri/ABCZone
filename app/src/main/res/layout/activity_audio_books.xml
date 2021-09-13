@@ -23,15 +23,15 @@
                 android:scaleType="fitStart"
                 android:src="@drawable/background_animals" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="30dp"
-                android:padding="10dp"
-                android:text="@string/stories"
-                android:textAllCaps="true"
-                android:textSize="30sp" />
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                app:srcCompat="@drawable/back" />
+
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -41,6 +41,16 @@
             android:layout_marginTop="-125dp"
             android:background="@drawable/round_corner"
             android:backgroundTint="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:text="@string/stories"
+                android:textAllCaps="true"
+                android:textSize="30sp" />
 
 
         </RelativeLayout>
@@ -84,6 +94,8 @@
                 android:layout_marginTop="-5dp"
                 android:layout_marginRight="-10dp"
                 android:layout_alignParentRight="true"/>
+
+
         </RelativeLayout>
 
         <RelativeLayout
