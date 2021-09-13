@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Animals">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
@@ -23,6 +26,13 @@
                 android:scaleType="fitStart"
                 android:src="@drawable/animalsbg" />
 
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                app:srcCompat="@drawable/back" />
         </RelativeLayout>
 
         <RelativeLayout

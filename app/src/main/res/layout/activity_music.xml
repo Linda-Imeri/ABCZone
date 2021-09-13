@@ -22,6 +22,14 @@
                 android:backgroundTint="#000000"
                 android:scaleType="fitStart"
                 android:src="@drawable/background_music" />
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                app:srcCompat="@drawable/back" />
         </RelativeLayout>
 
         <RelativeLayout
