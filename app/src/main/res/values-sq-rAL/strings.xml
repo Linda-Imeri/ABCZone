@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ABCZone</string>
-    <string name="password">Passwordi</string>
-    <string name="register">Registeri</string>
+    <string name="password">Fjalëkalimin</string>
+    <string name="register">Regjistrimi</string>
     <string name="email">Emaili</string>
-    <string name="sign_up">Sign Upi</string>
+    <string name="sign_up">Regjistrohu</string>
     <string name="button">Buttoni</string>
-    <string name="already_have_an_account_login_here">Hajde Already have an account ? Login here</string>
-    <string name="confirmpassword">ConfirmPasswordin</string>
-    <string name="forgot_password">Forgot Passwordin ?</string>
-    <string name="login">Logini</string>
-    <string name="navigation_open">Open navigation draweri</string>
-    <string name="navigation_close">Close navigation draweri</string>
+    <string name="already_have_an_account_login_here">Tashmë keni një llogari? Identifikohuni këtu</string>
+    <string name="confirmpassword">Konfirmo fjalëkalimin</string>
+    <string name="forgot_password">Keni harruar fjalëkalimin?</string>
+    <string name="login">Identifikohuni</string>
+    <string name="navigation_open">Hap navigacionin</string>
+    <string name="navigation_close">Mbyll navigacionin</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragmenti</string>
+    <string name="hello_blank_fragment">Përshendetje fragment i zbrazur</string>
     <string name="read">Lexo</string>
-    <string name="stories">Storjet</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
+    <string name="stories">Histori</string>
+    <string name="open">Hap</string>
+    <string name="close">Mbyll</string>
     <string name="abczone">ABCZone</string>
-    <string name="best_way_to_learn_english_with_your_child">Best way to learn english with your child</string>
-    <string name="start_to_learn">Fillo meso</string>
+    <string name="best_way_to_learn_english_with_your_child">Mënyra më e mirë për të mësuar anglisht me fëmijën tuaj</string>
+    <string name="start_to_learn">Fillo të mësosh </string>
 
 </resources>
