@@ -10,6 +10,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,7 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
     private EditText email,password,confirmPassword;
-
+    private ImageView back;
     private Button register;
     private TextView login;
 
@@ -37,6 +38,9 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
+        back=(ImageView) findViewById(R.id.back_icon);
+        back.setOnClickListener(this);
+
         register=(Button) findViewById(R.id.login);
         register.setOnClickListener(this);
 
@@ -45,17 +49,21 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         password=(EditText) findViewById(R.id.Password);
         confirmPassword=(EditText) findViewById(R.id.ConfirmPassword);
 
-        if(mAuth.getCurrentUser()!=null){
-            startActivity(new Intent(getApplicationContext(),Home.class));
-            finish();
+        //if(mAuth.getCurrentUser()!=null){
+           // startActivity(new Intent(getApplicationContext(),Home.class));
+           // finish();
         }
-    }
+    //}
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.login:
                 registerUser();
+                break;
+
+            case R.id.back_icon:
+                startActivity(new Intent(this,Login.class));
                 break;
 
 

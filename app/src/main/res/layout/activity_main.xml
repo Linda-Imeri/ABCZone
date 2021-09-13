@@ -37,5 +37,5 @@
         android:layout_marginTop="250dp"
         app:lottie_autoPlay="true"
         android:id="@+id/lottie"
-        app:lottie_rawRes="@raw/panda"/>
+        app:lottie_rawRes="@raw/lottie_animation"/>
 </RelativeLayout>
