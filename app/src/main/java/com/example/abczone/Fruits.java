@@ -34,12 +34,12 @@ public class Fruits extends AppCompatActivity {
         final MediaPlayer mp5 = MediaPlayer.create(getApplicationContext(), R.raw.orange);
         final MediaPlayer mp6 = MediaPlayer.create(getApplicationContext(), R.raw.oranges);
 
-        final MediaPlayer mp7 = MediaPlayer.create(getApplicationContext(), R.raw.apple);
-        final MediaPlayer mp8 = MediaPlayer.create(getApplicationContext(), R.raw.apples);
-        final MediaPlayer mp9 = MediaPlayer.create(getApplicationContext(), R.raw.banana);
-        final MediaPlayer mp10 = MediaPlayer.create(getApplicationContext(), R.raw.bananas);
-        final MediaPlayer mp11 = MediaPlayer.create(getApplicationContext(), R.raw.orange);
-        final MediaPlayer mp12 = MediaPlayer.create(getApplicationContext(), R.raw.oranges);
+        final MediaPlayer mp7 = MediaPlayer.create(getApplicationContext(), R.raw.carrot);
+        final MediaPlayer mp8 = MediaPlayer.create(getApplicationContext(), R.raw.carrots);
+        final MediaPlayer mp9 = MediaPlayer.create(getApplicationContext(), R.raw.tomato);
+        final MediaPlayer mp10 = MediaPlayer.create(getApplicationContext(), R.raw.tomates);
+        final MediaPlayer mp11 = MediaPlayer.create(getApplicationContext(), R.raw.peper);
+        final MediaPlayer mp12 = MediaPlayer.create(getApplicationContext(), R.raw.peppers);
         View.OnClickListener elem = new View.OnClickListener() {
 
             @Override
