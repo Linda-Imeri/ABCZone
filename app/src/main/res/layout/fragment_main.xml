@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainFragment">
 
     <ScrollView
@@ -24,6 +25,18 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/kids" />
+
+            <com.tomer.fadingtextview.FadingTextView
+                android:id="@+id/fadingText"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="50dp"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:texts="@array/text"
+                app:timeout="5000"
+                />
 
             <TextView
                 android:layout_width="wrap_content"

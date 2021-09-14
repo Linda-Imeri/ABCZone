@@ -18,6 +18,7 @@
         android:textSize="40sp"
         android:textStyle="bold" />
 
+
     <TextView
         android:id="@+id/welcome_message"
         android:layout_width="379dp"

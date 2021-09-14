@@ -21,5 +21,10 @@
     <string name="abczone">ABCZone</string>
     <string name="best_way_to_learn_english_with_your_child">Mënyra më e mirë për të mësuar anglisht me fëmijën tuaj</string>
     <string name="start_to_learn">Fillo të mësosh </string>
+    <string-array name="text">
+        <item>Mënyra më e mirë për të mësuar </item>
+        <item>Kënaquni me ABCZone</item>
+        <item>Argëtohuni</item>
+    </string-array>
 
 </resources>

@@ -59,6 +59,8 @@ public class MainFragment extends Fragment implements View.OnClickListener{
                 startActivity(intentMusic);
                 break;
 
+
+
             // case R.id.learnabc:
             //Intent intentColors= new Intent(getActivity().getApplicationContext(),Colors.class);
             // startActivity(intentColors);
