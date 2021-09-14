@@ -2,6 +2,7 @@ package com.example.abczone;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.media.Image;
@@ -9,7 +10,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -23,6 +26,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Locale;
 
@@ -33,6 +38,7 @@ public class MainZone extends AppCompatActivity {
     Toolbar toolbar;
     NavigationView navigationView;
     Button changeLang;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +74,10 @@ public class MainZone extends AppCompatActivity {
                     case R.id.profile:
                         fragment=new ProfileFragment();
                         loadFragment(fragment);
+                        break;
+                    case R.id.logout:
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent(MainZone.this,Login.class));
                         break;
                     case R.id.rateus:
                         fragment=new SettingsFragment();

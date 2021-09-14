@@ -20,4 +20,9 @@
     <string name="abczone">ABCZone</string>
     <string name="best_way_to_learn_english_with_your_child">Best way to learn english with your child</string>
     <string name="start_to_learn">Start to learn</string>
+    <string-array name="text">
+        <item>Best Way To Learn</item>
+        <item>Enjoy Your Time With ABCZone</item>
+        <item>Have Fun</item>
+    </string-array>
 </resources>

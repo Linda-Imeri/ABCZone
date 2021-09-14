@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.tomer.fadingtextview.FadingTextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView appname;
@@ -21,9 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         appname = findViewById(R.id.welcome);
         lottie = findViewById(R.id.lottie);
-
-        appname.animate().translationY(-1400).setDuration(2700).setStartDelay(0);
-        appname.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
+        appname.animate().translationY(1400).setDuration(2700).setStartDelay(2900);
+        //appname.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
 
         new Handler().postDelayed(new Runnable() {
             @Override

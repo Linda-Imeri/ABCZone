@@ -105,8 +105,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                   // Snackbar snack = Snackbar.make(rel, "You have been logged in! ", Snackbar.LENGTH_LONG);
-                    //snack.show();
+                   Snackbar snack = Snackbar.make(rel, "You have been logged in! ", Snackbar.LENGTH_LONG);
+                    snack.show();
                     startActivity(new Intent(Login.this, MainZone.class));
                 } else {
                     Toast.makeText(Login.this, "Failed", Toast.LENGTH_LONG).show();
