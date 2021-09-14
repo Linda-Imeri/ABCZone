@@ -30,6 +30,8 @@ public class MainFragment extends Fragment implements View.OnClickListener{
 
         audioBook=view.findViewById(R.id.audio_book);
         audioBook.setOnClickListener(this);
+        listenMusic=view.findViewById(R.id.listen_music);
+        listenMusic.setOnClickListener(this);
         letters=view.findViewById(R.id.learnabc);
         letters.setOnClickListener(this);
         animals=view.findViewById(R.id.learnanimals);
