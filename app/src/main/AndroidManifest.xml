@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ABCZone">
+<<<<<<< HEAD
         <activity android:name=".AboutUs"></activity>
+=======
+        <activity android:name=".Listen_Music"></activity>
+>>>>>>> 16f3bbda969ee8dd0cd4de7de8103b0082bdc7b6
         <activity android:name=".Numbers" />
         <activity android:name=".Months" />
         <activity android:name=".Fruits" />
