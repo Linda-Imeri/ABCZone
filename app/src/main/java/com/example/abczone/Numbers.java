@@ -27,16 +27,16 @@ public class Numbers extends AppCompatActivity {
         ImageView click10 = (ImageView) findViewById(R.id.ten);
 
 
-        final MediaPlayer mp1 = MediaPlayer.create(getApplicationContext(), R.raw.cataudio);
-        final MediaPlayer mp2 = MediaPlayer.create(getApplicationContext(), R.raw.dogaudio);
-        final MediaPlayer mp3 = MediaPlayer.create(getApplicationContext(), R.raw.cowaudio);
-        final MediaPlayer mp4 = MediaPlayer.create(getApplicationContext(), R.raw.lionaudio);
-        final MediaPlayer mp5 = MediaPlayer.create(getApplicationContext(), R.raw.tigeraudio);
-        final MediaPlayer mp6 = MediaPlayer.create(getApplicationContext(), R.raw.elephantaudio);
-        final MediaPlayer mp7 = MediaPlayer.create(getApplicationContext(), R.raw.cowaudio);
-        final MediaPlayer mp8 = MediaPlayer.create(getApplicationContext(), R.raw.lionaudio);
-        final MediaPlayer mp9 = MediaPlayer.create(getApplicationContext(), R.raw.tigeraudio);
-        final MediaPlayer mp10 = MediaPlayer.create(getApplicationContext(), R.raw.elephantaudio);
+        final MediaPlayer mp1 = MediaPlayer.create(getApplicationContext(), R.raw.one);
+        final MediaPlayer mp2 = MediaPlayer.create(getApplicationContext(), R.raw.two);
+        final MediaPlayer mp3 = MediaPlayer.create(getApplicationContext(), R.raw.three);
+        final MediaPlayer mp4 = MediaPlayer.create(getApplicationContext(), R.raw.four);
+        final MediaPlayer mp5 = MediaPlayer.create(getApplicationContext(), R.raw.five);
+        final MediaPlayer mp6 = MediaPlayer.create(getApplicationContext(), R.raw.six);
+        final MediaPlayer mp7 = MediaPlayer.create(getApplicationContext(), R.raw.seven);
+        final MediaPlayer mp8 = MediaPlayer.create(getApplicationContext(), R.raw.eight);
+        final MediaPlayer mp9 = MediaPlayer.create(getApplicationContext(), R.raw.nine);
+        final MediaPlayer mp10 = MediaPlayer.create(getApplicationContext(), R.raw.ten);
         View.OnClickListener elem = new View.OnClickListener() {
 
             @Override
