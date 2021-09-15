@@ -58,13 +58,13 @@ public class Colors extends AppCompatActivity {
                         mp6.start();
                         break;
                     case R.id.button7:
-                        mp4.start();
+                        mp7.start();
                         break;
                     case R.id.button8:
-                        mp5.start();
+                        mp8.start();
                         break;
                     case R.id.button9:
-                        mp6.start();
+                        mp9.start();
                         break;
                 }
             }
