@@ -31,7 +31,7 @@
         android:id="@+id/textView4"
         android:layout_width="365dp"
         android:layout_height="106dp"
-        android:text="ABCzone is an educational app to help your kids learn basic tracing starting from numbers 1 to 10, colors, fruits, vegetables... ABCzone includes fun, educational activities for kids! If your child is in kindergarden, or going to attend preschool, this is a free learning app for your children."
+        android:text="ABCzone is an educational app to help your kids learn basic tracing starting from numbers 1 to 10, colors, fruits, vegetables... ABCzone includes fun, educational activities for kids! If your child is in kindergarden, or going to attend preschool, this is a free learning."
         android:textColor="#82CDEC"
         android:textSize="15dp"
         android:textStyle="bold|italic"
