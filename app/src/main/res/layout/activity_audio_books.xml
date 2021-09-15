@@ -83,7 +83,7 @@
                     android:layout_alignParentBottom="true"
                     android:background="@color/orange"
                     android:padding="20dp"
-                    android:text="Read" />
+                    android:text="Listen" />
 
 
             </RelativeLayout>
@@ -121,9 +121,10 @@
                 android:padding="25dp"/>
 
             <Button
+                android:id="@+id/read2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Story"
+                android:text="Listen"
                 android:layout_alignParentRight="true"
                 android:background="@color/white"
                 android:padding="20dp"
@@ -152,12 +153,14 @@
                     android:padding="25dp"/>
 
                 <Button
+                    android:id="@+id/read3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Read"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
                     android:background="@color/white"
                     android:padding="20dp"
-                    android:layout_alignParentBottom="true"/>
+                    android:text="Listen" />
 
 
             </RelativeLayout>
@@ -192,9 +195,10 @@
                 android:padding="25dp"/>
 
             <Button
+                android:id="@+id/read4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Story"
+                android:text="Listen"
                 android:layout_alignParentRight="true"
                 android:background="@color/white"
                 android:padding="20dp"
@@ -221,9 +225,10 @@
                     android:padding="25dp"/>
 
                 <Button
+                    android:id="@+id/read5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Read"
+                    android:text="Listen"
                     android:background="@color/white"
                     android:padding="20dp"
                     android:layout_alignParentBottom="true"/>
@@ -261,9 +266,10 @@
                 android:padding="25dp"/>
 
             <Button
+                android:id="@+id/read6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Story"
+                android:text="Listen"
                 android:layout_alignParentRight="true"
                 android:background="@color/white"
                 android:padding="20dp"
