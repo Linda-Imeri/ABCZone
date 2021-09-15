@@ -6,22 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".Music">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/orange">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:backgroundTint="#000000"
-                android:scaleType="fitStart"
-                android:src="@drawable/background_music" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Songs"
+                android:textSize="30sp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="60dp"
+                android:textAllCaps="true"
+                android:padding="10dp"/>
 
             <ImageView
                 android:id="@+id/back_icon"
@@ -33,169 +36,305 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="360dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="-125dp"
-            android:background="@drawable/round_corner"
-            android:backgroundTint="#FFFFFF">
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:layout_marginTop="-110dp">
+            <GridLayout
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Songs"
-                android:textSize="30sp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="30dp"
-                android:textAllCaps="true"
-                android:padding="10dp"/>
-
-        </RelativeLayout>
-
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="140dp">
-
-            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/round_corner"
-                android:backgroundTint="@color/orange"
-                android:layout_margin="20dp">
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:rowCount="8"
+                android:columnCount="2"
+                android:padding="14dp"
+                android:layout_marginTop="50dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/jonny"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
 
-                <Button
-                    android:id="@+id/play1"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="25dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/play_icon"
-                    android:padding="20dp"
-                    />
+                        <Button
+                            android:id="@+id/song1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
 
 
-            </RelativeLayout>
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/panda_sitting"
-                android:layout_marginTop="-5dp"
-                android:layout_marginRight="-10dp"
-                android:layout_alignParentLeft="true"/>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/five_monkeys"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <Button
+                            android:id="@+id/song2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bus_song"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <Button
+                            android:id="@+id/song3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/five_ducks"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <Button
+                            android:id="@+id/song4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/happy_song"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <Button
+                            android:id="@+id/song5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/jinglebells_song"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <Button
+                            android:id="@+id/song6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rain_song"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <Button
+                            android:id="@+id/song7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="110dp"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/twinkle_song"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical">
+
+                        <Button
+                            android:id="@+id/song8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/play_icon"
+                            android:padding="20dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
         </RelativeLayout>
 
+</LinearLayout>
 
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="140dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/round_corner"
-                android:backgroundTint="@color/orange"
-                android:layout_margin="20dp">
-
-                <Button
-                    android:id="@+id/play2"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="25dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/play_icon"
-                    android:padding="20dp"
-                    />
-
-
-            </RelativeLayout>
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/panda_sitting"
-                android:layout_marginTop="-5dp"
-                android:layout_marginRight="-10dp"
-                android:layout_alignParentLeft="true"/>
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="140dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/round_corner"
-                android:backgroundTint="@color/orange"
-                android:layout_margin="20dp">
-
-                <Button
-                    android:id="@+id/play3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="25dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/play_icon"
-                    android:padding="20dp"
-                    />
-
-
-            </RelativeLayout>
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/panda_sitting"
-                android:layout_marginTop="-5dp"
-                android:layout_marginRight="-10dp"
-                android:layout_alignParentLeft="true"/>
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="140dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/round_corner"
-                android:backgroundTint="@color/orange"
-                android:layout_margin="20dp">
-
-                <Button
-                    android:id="@+id/play4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="25dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/play_icon"
-                    android:padding="20dp"
-                    />
-
-
-            </RelativeLayout>
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/panda_sitting"
-                android:layout_marginTop="-5dp"
-                android:layout_marginRight="-10dp"
-                android:layout_alignParentLeft="true"/>
-        </RelativeLayout>
-
-
-    </LinearLayout>
 
 </ScrollView>

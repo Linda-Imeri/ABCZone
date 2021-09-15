@@ -2,53 +2,52 @@ package com.example.abczone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Music extends AppCompatActivity {
-
+public class Music extends AppCompatActivity implements View.OnClickListener{
+    private Button song1,song2,song3,song4,song5,song6,song7,song8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
-        Button click1=(Button)findViewById(R.id.play1);
-        Button click2=(Button)findViewById(R.id.play2);
-        Button click3=(Button)findViewById(R.id.play3);
-        Button click4=(Button)findViewById(R.id.play4);
+         song1=(Button)findViewById(R.id.song1);
+         song1.setOnClickListener(this);
 
-        final MediaPlayer mp1=MediaPlayer.create(getApplicationContext(), R.raw.sound1);
-        final MediaPlayer mp2=MediaPlayer.create(getApplicationContext(), R.raw.sound2);
-        final MediaPlayer mp3=MediaPlayer.create(getApplicationContext(), R.raw.sound3);
-        final MediaPlayer mp4=MediaPlayer.create(getApplicationContext(), R.raw.sound4);
+        song2=(Button)findViewById(R.id.song2);
+        song2.setOnClickListener(this);
 
-        View.OnClickListener elem = new View.OnClickListener() {
+        song3=(Button)findViewById(R.id.song3);
+        song3.setOnClickListener(this);
 
-            @Override
-            public void onClick(View v) {
+        song4=(Button)findViewById(R.id.song4);
+        song4.setOnClickListener(this);
 
-                switch (v.getId()) {
-                    case R.id.play1:
-                        mp1.start();
-                        break;
-                    case R.id.play2:
-                        mp2.start();
-                        break;
-                    case R.id.play3:
-                        mp3.start();
-                        break;
-                    case R.id.play4:
-                        mp4.start();
-                        break;
+        song5=(Button)findViewById(R.id.song5);
+        song5.setOnClickListener(this);
 
-                }
-            }
-        };
-        click1.setOnClickListener(elem);
-        click2.setOnClickListener(elem);
-        click3.setOnClickListener(elem);
-        click4.setOnClickListener(elem);
+        song6=(Button)findViewById(R.id.song6);
+        song6.setOnClickListener(this);
 
-    }
+        song7=(Button)findViewById(R.id.song7);
+        song7.setOnClickListener(this);
+
+        song8=(Button)findViewById(R.id.song8);
+        song8.setOnClickListener(this);
+
+        }
+
+    @Override
+    public void onClick(View v) {
+
+        Intent intent = new Intent(this, Listen_Music.class);
+        intent.putExtra("intVariableName", v.getId()); //where v is button that is cliked, you will find it as a parameter to onClick method
+        startActivity(intent);
+
+        }
 }
+
+

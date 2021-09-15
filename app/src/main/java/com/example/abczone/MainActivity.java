@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
         appname = findViewById(R.id.welcome);
         lottie = findViewById(R.id.lottie);
-        appname.animate().translationY(1400).setDuration(2700).setStartDelay(2900);
+        //appname.animate().translationY(1400).setDuration(2700).setStartDelay(2900);
         //appname.animate().translationX(2000).setDuration(2000).setStartDelay(2900);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(getApplicationContext(), MainZone.class);
+                Intent i = new Intent(getApplicationContext(), Login.class);
                 startActivity(i);
             }
         }, 6000);
