@@ -14,7 +14,7 @@ import android.widget.ImageView;
 public class MainFragment extends Fragment implements View.OnClickListener{
 
     private Button audioBook,listenMusic;
-    private ImageView letters,animals,fruits,colors,months;
+    private ImageView numbers,animals,fruits,colors,months;
 
     public MainFragment() {
         // Required empty public constructor
@@ -32,8 +32,8 @@ public class MainFragment extends Fragment implements View.OnClickListener{
         audioBook.setOnClickListener(this);
         listenMusic=view.findViewById(R.id.listen_music);
         listenMusic.setOnClickListener(this);
-        letters=view.findViewById(R.id.learnabc);
-        letters.setOnClickListener(this);
+        numbers=view.findViewById(R.id.learnnumbers);
+        numbers.setOnClickListener(this);
         animals=view.findViewById(R.id.learnanimals);
         animals.setOnClickListener(this);
         fruits=view.findViewById(R.id.learnfruits);
@@ -42,7 +42,6 @@ public class MainFragment extends Fragment implements View.OnClickListener{
         colors.setOnClickListener(this);
         months=view.findViewById(R.id.learnmonths);
         months.setOnClickListener(this);
-
 
         return view;
     }
@@ -61,12 +60,10 @@ public class MainFragment extends Fragment implements View.OnClickListener{
                 startActivity(intentMusic);
                 break;
 
-
-
-            // case R.id.learnabc:
-            //Intent intentColors= new Intent(getActivity().getApplicationContext(),Colors.class);
-            // startActivity(intentColors);
-            // break;
+            case R.id.learnnumbers:
+                Intent intentNumbers= new Intent(getActivity().getApplicationContext(),Numbers.class);
+                startActivity(intentNumbers);
+                break;
 
             case R.id.learncolors:
                 Intent intentColors= new Intent(getActivity().getApplicationContext(),Colors.class);

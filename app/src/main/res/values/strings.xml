@@ -20,6 +20,14 @@
     <string name="abczone">ABCZone</string>
     <string name="best_way_to_learn_english_with_your_child">Best way to learn english with your child</string>
     <string name="start_to_learn">Start to learn</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="learn_and_have_fun">Learn and have fun</string>
+    <string name="audio_books">Audio Books</string>
+    <string name="listen">Listen</string>
+    <string name="music">Music</string>
+    <string name="short_movies">Short Movies</string>
+    <string name="watch">Watch</string>
+    <string name="lang">Lang</string>
     <string-array name="text">
         <item>Best Way To Learn</item>
         <item>Enjoy Your Time With ABCZone</item>
