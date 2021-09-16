@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import java.text.DateFormatSymbols;
 
-    public class Months extends AppCompatActivity  implements AdapterView.OnItemClickListener{
+    public class Months2 extends AppCompatActivity  implements AdapterView.OnItemClickListener{
 
         ListView lvMonth;
         String[] months;

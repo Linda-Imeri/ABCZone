@@ -84,7 +84,7 @@ public class MainFragment extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.learnmonths:
-                Intent intentMonths=new Intent(getActivity().getApplicationContext(),Months.class);
+                Intent intentMonths=new Intent(getActivity().getApplicationContext(), Months2.class);
                 startActivity(intentMonths);
                 break;
     }
