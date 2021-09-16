@@ -17,9 +17,10 @@
                 android:id="@+id/changeLang"
                 android:layout_width="80dp"
                 android:layout_height="35dp"
-                android:background="@color/orange"
+                android:background="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginStart="250dp"
-                android:text="Lang"
+                android:text="@string/lang"
 
 
                 />

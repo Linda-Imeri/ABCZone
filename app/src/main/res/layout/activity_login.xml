@@ -7,14 +7,14 @@
     android:background="@color/orange"
     tools:context=".Login"
     android:id="@+id/rel">
-                >
+
 
     <LinearLayout
             android:layout_width="350dp"
             android:layout_height="524dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="160dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/round_corner"
             android:orientation="vertical"
             android:paddingLeft="20dp"
@@ -23,7 +23,7 @@
 
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/login_text"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
@@ -40,7 +40,8 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/input"
+                app:backgroundTint="@color/orange"
+                android:textColorHint="@color/gray"
                 android:drawableStart="@drawable/ic_email"
                 android:drawablePadding="12dp"
                 android:ems="12"
@@ -56,11 +57,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/input"
+                app:backgroundTint="@color/orange"
                 android:drawableStart="@drawable/ic_lock"
                 android:drawablePadding="12dp"
                 android:ems="12"
                 android:hint="@string/password"
+                android:textColorHint="@color/gray"
                 android:inputType="textPassword"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"/>
@@ -71,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
+            android:textColor="@color/white"
             android:background="@drawable/button_style"
             android:text="@string/login" />
 
@@ -85,6 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/forgot_password"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     />
 
@@ -93,6 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="90dp"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:text="@string/register"
                     />
