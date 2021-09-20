@@ -20,7 +20,7 @@ import java.text.DateFormatSymbols;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_months);
+            setContentView(R.layout.activity_months2);
             lvMonth=findViewById(R.id.lvMonth);
             months=new DateFormatSymbols().getMonths();
             ArrayAdapter<String> monthAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,months);

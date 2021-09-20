@@ -1,8 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abczone">
 
-<<<<<<< HEAD
-    <application></application>
-=======
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -15,7 +14,6 @@
         <activity android:name=".AboutUs"/>
         <activity android:name=".Listen_Music"/>
         <activity android:name=".Numbers" />
-        <activity android:name=".Months" />
         <activity android:name=".Fruits" />
         <activity android:name=".Colors" />
         <activity android:name=".Animals" />
@@ -41,6 +39,5 @@
         </activity>
         <activity android:name=".Register" />
     </application>
->>>>>>> ad05e542b0eb9447214b3927d8f80893dfa6ab8f
 
 </manifest>
