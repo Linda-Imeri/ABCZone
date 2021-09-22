@@ -34,11 +34,12 @@
     <string name="the_onion">The Onion</string>
     <string name="ant_and_dove">Ant and Dove</string>
     <string name="cowboy">Cowboy</string>
-    <string name="watch_short_movies">Watch short movies</string>
+    <string name="watch_short_movies">Shiko filma të shkurtër </string>
     <string-array name="text">
         <item>Mënyra më e mirë për të mësuar </item>
         <item>Kënaquni me ABCZone</item>
         <item>Argëtohuni</item>
     </string-array>
+   
 
 </resources>
