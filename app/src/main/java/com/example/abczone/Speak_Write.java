@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +23,7 @@ import java.util.Locale;
 
 public class Speak_Write extends AppCompatActivity {
 
-        private ImageButton speak;
+        private ImageView speak;
         private TextView edittext;
         public static final Integer RESULT_SPEECH = 1;
 
