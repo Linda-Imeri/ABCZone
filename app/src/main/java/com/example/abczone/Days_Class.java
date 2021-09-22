@@ -1,6 +1,6 @@
 package com.example.abczone;
 
-public class Country {
+public class Days_Class {
 
     String name;
     String capital;

@@ -10,34 +10,29 @@
     android:layout_weight="100"
     tools:context=".Colors">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:backgroundTint="#000000"
+                android:scaleType="fitStart"
+                android:src="@drawable/colorbg" />
 
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:backgroundTint="#000000"
-            android:scaleType="fitStart"
-            android:src="@drawable/colorbg" />
-
-        <ImageView
-            android:id="@+id/back_icon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="1dp"
-            app:srcCompat="@drawable/back" />
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:srcCompat="@drawable/back" />
     </RelativeLayout>
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -72,11 +67,6 @@
             android:backgroundTint="#FFF301"
             android:layout_centerHorizontal="true"
             ></Button>
-
-
-
-
-
 
         </RelativeLayout>
 
@@ -114,11 +104,7 @@
                 android:layout_centerHorizontal="true"
                 ></Button>
 
-
-
-
         </RelativeLayout>
-
 
         <RelativeLayout
             android:layout_margin="10dp"
@@ -152,7 +138,6 @@
                 android:text="BLACK"
                 android:layout_centerHorizontal="true"
                 ></Button>
-
 
         </RelativeLayout>
 

@@ -6,18 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Animals">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/black"
         android:orientation="vertical">
-
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
 
             <ImageView
                 android:layout_width="match_parent"
@@ -28,170 +25,357 @@
 
             <ImageView
                 android:id="@+id/back_icon"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
                 app:srcCompat="@drawable/back" />
+
         </RelativeLayout>
 
-
-        <RelativeLayout
+        <LinearLayout
+            android:background="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="#F7A02D "
-            android:layout_margin="20dp">
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/apple"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/apple" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Apple"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/apples"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/apples" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Apples"
+                    android:layout_gravity="center"/>
 
 
-            <ImageView
-                android:id="@+id/apples"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="-2dp"
-                app:srcCompat="@drawable/apples" />
+            </LinearLayout>
 
-            <ImageView
-                android:id="@+id/apple"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                app:srcCompat="@drawable/apple" />
+        </LinearLayout>
 
 
-        </RelativeLayout>
-
-        <RelativeLayout
+        <LinearLayout
+            android:background="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="#1BB22E "
-            android:layout_margin="20dp">
+            android:layout_height="200dp"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/banana"
-                app:srcCompat="@drawable/banana"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentStart="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/banana"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/banana" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Banana"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/bananas"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/bananas" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Bananas"
+                    android:layout_gravity="center"/>
 
 
-            <ImageView
-                android:id="@+id/bananas"
-                app:srcCompat="@drawable/bananas"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentEnd="true"/>
+            </LinearLayout>
 
+        </LinearLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
+        <LinearLayout
+            android:background="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="#2068A6"
-            android:layout_margin="20dp">
+            android:layout_height="200dp"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/orange"
-                app:srcCompat="@drawable/orange"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentStart="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:id="@+id/orange"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/orange" />
 
-            <ImageView
-                android:id="@+id/oranges"
-                app:srcCompat="@drawable/oranges"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentEnd="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Orange"
+                    android:layout_gravity="center"/>
 
-        </RelativeLayout>
+            </LinearLayout>
 
-        <RelativeLayout
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/oranges"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/oranges" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Oranges"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_margin="20dp"
-            android:background="#95B9F2">
+            android:layout_height="200dp"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/carrot"
-                app:srcCompat="@drawable/carrot"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentStart="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:id="@+id/carrot"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/carrot" />
 
-            <ImageView
-                android:id="@+id/carrots"
-                app:srcCompat="@drawable/carrots"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentEnd="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Carrot"
+                    android:layout_gravity="center"/>
 
+            </LinearLayout>
 
-        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
 
-        <RelativeLayout
+                <ImageView
+                    android:id="@+id/carrots"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/carrots" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Carrots"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_margin="20dp"
-            android:background="#DD95F2">
+            android:layout_height="200dp"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/tomato"
-                app:srcCompat="@drawable/tomato"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentStart="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:id="@+id/peper"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/peper1" />
 
-            <ImageView
-                android:id="@+id/tomatos"
-                app:srcCompat="@drawable/tomatos"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentEnd="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Peper"
+                    android:layout_gravity="center"/>
 
+            </LinearLayout>
 
-        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
 
+                <ImageView
+                    android:id="@+id/peppers"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/peppers" />
 
-        <RelativeLayout
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Peppers"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_margin="20dp"
-            android:background="#EC99CE">
+            android:layout_height="200dp"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/peper"
-                app:srcCompat="@drawable/peper1"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentStart="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:id="@+id/tomato"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/tomato" />
 
-            <ImageView
-                android:id="@+id/peppers"
-                app:srcCompat="@drawable/peppers"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_alignParentEnd="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Tomato"
+                    android:layout_gravity="center"/>
 
+            </LinearLayout>
 
-        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/tomatos"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/tomatos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:text="Tomatos"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
