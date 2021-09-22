@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_light"
-    android:paddingTop="10dp"
     tools:context=".Numbers">
 
     <LinearLayout
@@ -20,7 +19,7 @@
                 android:id="@+id/back_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:padding="20dp"
                 app:srcCompat="@drawable/back" />
 
         </RelativeLayout>
@@ -28,25 +27,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginBottom="-30dp"
-            android:textColor="@color/black"
+            android:layout_marginStart="105dp"
+            android:textColor="@color/gray_dark"
             android:padding="10dp"
+            android:layout_marginTop="-40dp"
             android:text="Learn Numbers"
-            android:textAllCaps="true"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold|italic" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:layout_marginTop="30dp"
             android:background="@color/gray_light">
 
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="One"
-                android:textColor="@color/black"
+                android:textColor="#fd0001"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginEnd="60dp"
@@ -54,7 +53,6 @@
                 android:fontFamily="sans-serif"
                 android:layout_alignParentEnd="true"
                 />
-
             <ImageView
                 android:id="@+id/one"
                 android:layout_width="190dp"
@@ -73,7 +71,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Two"
-                android:textColor="@color/black"
+                android:textColor="#78bc0f"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -100,7 +98,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Three"
-                android:textColor="@color/black"
+                android:textColor="#fd9113"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -126,7 +124,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Four"
-                android:textColor="@color/black"
+                android:textColor="#1aa7cc"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -153,7 +151,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Five"
-                android:textColor="@color/black"
+                android:textColor="#fdae2d"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -180,7 +178,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Six"
-                android:textColor="@color/black"
+                android:textColor="#d969bd"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -207,7 +205,34 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Seven"
-                android:textColor="@color/black"
+                android:textColor="#38a26e"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:layout_alignParentEnd="true"
+                />
+
+            <ImageView
+                android:id="@+id/seven"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/_seven"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/gray_light">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Eight"
+                android:textColor="#8d4c9e"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -233,8 +258,8 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Eight"
-                android:textColor="@color/black"
+                android:text="Nine"
+                android:textColor="#d1337e"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -251,7 +276,6 @@
                 android:layout_alignParentStart="true"/>
 
         </RelativeLayout>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -260,8 +284,8 @@
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="One"
-                android:textColor="@color/black"
+                android:text="Ten"
+                android:textColor="#fdcb16"
                 android:textSize="50sp"
                 android:gravity="center"
                 android:layout_marginRight="60dp"
@@ -278,8 +302,6 @@
                 android:layout_alignParentStart="true"/>
 
         </RelativeLayout>
-
     </LinearLayout>
-
 
 </ScrollView>
