@@ -29,6 +29,12 @@
     <string name="short_movies">Short Movies</string>
     <string name="watch">Watch</string>
     <string name="lang">Lang</string>
+    <string name="ants_and_pen">Ants and pen</string>
+    <string name="speak_first">Speak first</string>
+    <string name="the_onion">The Onion</string>
+    <string name="ant_and_dove">Ant and Dove</string>
+    <string name="cowboy">Cowboy</string>
+    <string name="watch_short_movies">Watch short movies</string>
     <string-array name="text">
         <item>Mënyra më e mirë për të mësuar </item>
         <item>Kënaquni me ABCZone</item>

@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -32,19 +33,24 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.Locale;
 
 public class MainZone extends AppCompatActivity {
-
+    ImageButton imageButton;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     Toolbar toolbar;
     NavigationView navigationView;
-    Button changeLang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_zone);
 
-        changeLang=findViewById(R.id.changeLang);
+        imageButton=findViewById(R.id.speak);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainZone.this,Speak_Write.class));
+            }
+        });
         drawerLayout=findViewById(R.id.drawer);
         toolbar=findViewById(R.id.toolBar);
         toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
@@ -52,12 +58,6 @@ public class MainZone extends AppCompatActivity {
         toggle.syncState();
         navigationView=findViewById(R.id.nav_view);
 
-        changeLang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showChangeLanguageDialog();
-            }
-        });
 
         loadFragment(new MainFragment());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -71,6 +71,9 @@ public class MainZone extends AppCompatActivity {
                         fragment=new MainFragment();
                         loadFragment(fragment);
                         break;
+                    case R.id.Language:
+                        showChangeLanguageDialog();
+                        break;
                     case R.id.profile:
                         fragment=new ProfileFragment();
                         loadFragment(fragment);
@@ -79,9 +82,8 @@ public class MainZone extends AppCompatActivity {
                         FirebaseAuth.getInstance().signOut();
                         startActivity(new Intent(MainZone.this,Login.class));
                         break;
-                    case R.id.rateus:
-                        fragment=new SettingsFragment();
-                        loadFragment(fragment);
+                    case R.id.aboutUs:
+                        startActivity(new Intent(MainZone.this,AboutUs.class));
                         break;
                     default:
                         return true;

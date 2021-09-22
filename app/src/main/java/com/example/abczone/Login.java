@@ -31,8 +31,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     private FirebaseAuth mAuth;
 
-    RelativeLayout rel;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,8 +48,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         loginEmail = (EditText) findViewById(R.id.LoginEmail);
         loginPassword = (EditText) findViewById(R.id.LoginPassword);
 
-
         mAuth = FirebaseAuth.getInstance();
+
+        if(mAuth.getCurrentUser()!=null){
+            startActivity(new Intent(getApplicationContext(),MainZone.class));
+            finish();
+        }
     }
 
     @Override
@@ -60,9 +62,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
 
             case R.id.Login:
-
-                //final Animation animation = AnimationUtils.loadAnimation(this, R.anim.bounce);
-                //Login.startAnimation(animation);
                 userLogin();
                 break;
 

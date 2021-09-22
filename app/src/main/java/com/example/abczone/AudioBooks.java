@@ -9,9 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class AudioBooks extends AppCompatActivity implements View.OnClickListener {
-    private Button read1,read2,read3,read4,read5,read6;
+    private Button read1,read2,read3,read4,read5;
     private ImageView back;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,16 +35,14 @@ public class AudioBooks extends AppCompatActivity implements View.OnClickListene
         read4.setOnClickListener(this);
         read5=(Button)findViewById(R.id.read5);
         read5.setOnClickListener(this);
-        read6=(Button)findViewById(R.id.read6);
-        read6.setOnClickListener(this);
+
 
     }
 
     @Override
     public void onClick(View v){
                    Intent intent = new Intent(this, ListenAudioBooks.class);
-                   intent.putExtra("intVariableName", v.getId()); //where v is button that is cliked, you will find it as a parameter to onClick method
+                   intent.putExtra("intVariableName", v.getId());
                    startActivity(intent);
-
         }
 }

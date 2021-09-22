@@ -48,12 +48,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         email=(EditText) findViewById(R.id.Email);
         password=(EditText) findViewById(R.id.Password);
         confirmPassword=(EditText) findViewById(R.id.ConfirmPassword);
-
-        //if(mAuth.getCurrentUser()!=null){
-           // startActivity(new Intent(getApplicationContext(),Home.class));
-           // finish();
-        }
-    //}
+    }
 
     @Override
     public void onClick(View v) {
@@ -103,7 +98,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         }
 
 
-
         //register user in firebase
         mAuth.createUserWithEmailAndPassword(Email,Password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -111,10 +105,9 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
                             Toast.makeText(Register.this, "User Created.", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),Home.class));
+                            startActivity(new Intent(getApplicationContext(),MainZone.class));
                         }
                         else{
-
                             Toast.makeText(Register.this,"Failed to register" + task.getException().getMessage(),Toast.LENGTH_LONG).show();
 
                         }

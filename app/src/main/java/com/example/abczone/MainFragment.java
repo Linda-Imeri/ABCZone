@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 public class MainFragment extends Fragment implements View.OnClickListener{
 
-    private Button audioBook,listenMusic;
+    private Button audioBook,listenMusic,watch;
     private ImageView numbers,animals,fruits,colors,months;
 
     public MainFragment() {
@@ -28,6 +28,8 @@ public class MainFragment extends Fragment implements View.OnClickListener{
         Bundle bundle = getActivity().getIntent().getExtras();
         View view=inflater.inflate(R.layout.fragment_main, container, false);
 
+        watch=view.findViewById(R.id.watch);
+        watch.setOnClickListener(this);
         audioBook=view.findViewById(R.id.audio_book);
         audioBook.setOnClickListener(this);
         listenMusic=view.findViewById(R.id.listen_music);
@@ -51,13 +53,17 @@ public class MainFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.audio_book:
-                Intent intentRegister = new Intent(getActivity().getApplicationContext(),AudioBooks.class);
-                startActivity(intentRegister);
+                Intent intentAudio = new Intent(getActivity().getApplicationContext(),AudioBooks.class);
+                startActivity(intentAudio);
                 break;
 
             case R.id.listen_music:
                 Intent intentMusic= new Intent(getActivity().getApplicationContext(),Music.class);
                 startActivity(intentMusic);
+                break;
+            case R.id.watch:
+                Intent intentWatch = new Intent(getActivity().getApplicationContext(),Movie.class);
+                startActivity(intentWatch);
                 break;
 
             case R.id.learnnumbers:

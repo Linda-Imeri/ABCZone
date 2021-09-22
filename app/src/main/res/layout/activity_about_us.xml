@@ -13,7 +13,8 @@
         android:backgroundTint="#8CF17E"
         android:text="Mobile learning is more than textbooks it is an ideal way to expand various faculties of children. "
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="289dp" />
+        tools:layout_editor_absoluteY="289dp"
+         />
 
 
     <Button
@@ -25,7 +26,8 @@
         android:backgroundTint="#82CDEC"
         android:text="Experts say that apps in education can make children more interactive and activate better engagement between parents and children. "
         tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="435dp" />
+        tools:layout_editor_absoluteY="435dp"
+       />
 
     <TextView
         android:id="@+id/textView4"
@@ -36,7 +38,8 @@
         android:textSize="15dp"
         android:textStyle="bold|italic"
         tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="161dp" />
+        tools:layout_editor_absoluteY="161dp"
+       />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -44,7 +47,8 @@
         android:layout_height="199dp"
         app:srcCompat="@drawable/k"
         tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="256dp" />
+        tools:layout_editor_absoluteY="256dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -52,7 +56,8 @@
         android:layout_height="142dp"
         app:srcCompat="@drawable/j"
         tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="443dp" />
+        tools:layout_editor_absoluteY="443dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView5"
@@ -63,7 +68,8 @@
         android:textStyle="bold|italic"
         android:textColor="#8CF17E"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="600dp" />
+        tools:layout_editor_absoluteY="600dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button5"
@@ -72,7 +78,8 @@
         android:text="ABOUT US"
         android:backgroundTint="#AEBCAC"
         tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="78dp" />
+        tools:layout_editor_absoluteY="78dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -80,6 +87,7 @@
         android:layout_height="132dp"
         app:srcCompat="@drawable/o"
         tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        tools:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
