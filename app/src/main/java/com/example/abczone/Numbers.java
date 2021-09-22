@@ -14,7 +14,6 @@ public class Numbers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-
         ImageView click1 = (ImageView) findViewById(R.id.one);
         ImageView click2 = (ImageView) findViewById(R.id.two);
         ImageView click3 = (ImageView) findViewById(R.id.three);

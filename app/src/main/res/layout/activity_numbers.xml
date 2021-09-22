@@ -4,90 +4,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C9F6C9"
+    android:paddingTop="10dp"
     tools:context=".Numbers">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/back" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="-30dp"
+            android:textColor="#C3C4C3"
+            android:padding="10dp"
+            android:text="Learn Numbers"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
 
         <ImageView
             android:id="@+id/one"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
 
             app:srcCompat="@drawable/_one" />
 
         <ImageView
             android:id="@+id/two"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-40dp"
+
 
             app:srcCompat="@drawable/two" />
 
         <ImageView
             android:id="@+id/three"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-40dp"
+
 
             app:srcCompat="@drawable/_three" />
 
         <ImageView
             android:id="@+id/four"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-20dp"
+
+
 
             app:srcCompat="@drawable/_four" />
 
         <ImageView
             android:id="@+id/five"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+
+
 
             app:srcCompat="@drawable/_five" />
 
         <ImageView
             android:id="@+id/six"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+
+
 
             app:srcCompat="@drawable/_six" />
 
         <ImageView
             android:id="@+id/seven"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+
+
 
             app:srcCompat="@drawable/_seven" />
 
         <ImageView
             android:id="@+id/eight"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+
 
             app:srcCompat="@drawable/_eight" />
 
         <ImageView
             android:id="@+id/nine"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+
 
             app:srcCompat="@drawable/_nine" />
 
         <ImageView
             android:id="@+id/ten"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="-10dp"
+
+
 
             app:srcCompat="@drawable/_ten" />
 
