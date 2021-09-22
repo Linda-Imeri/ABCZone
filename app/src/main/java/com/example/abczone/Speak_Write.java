@@ -25,13 +25,22 @@ public class Speak_Write extends AppCompatActivity {
 
         private ImageView speak;
         private TextView edittext;
-        public static final Integer RESULT_SPEECH = 1;
+        private ImageView back;
+
+    public static final Integer RESULT_SPEECH = 1;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_speak__write);
 
+            back=(ImageView) findViewById(R.id.back_icon);
+            back.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(Speak_Write.this,MainZone.class));
+                }
+            });
             edittext = findViewById(R.id.text);
             speak = findViewById(R.id.speak);
             speak.setOnClickListener(new View.OnClickListener() {

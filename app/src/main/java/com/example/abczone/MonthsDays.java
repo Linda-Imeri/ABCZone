@@ -20,7 +20,7 @@ public class MonthsDays extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_months_days);
 
         textView = findViewById(R.id.textView);
         XmlPullParserFactory pullParserFactory;
