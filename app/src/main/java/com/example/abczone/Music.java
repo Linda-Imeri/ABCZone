@@ -7,13 +7,23 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Music extends AppCompatActivity implements View.OnClickListener{
     private Button song1,song2,song3,song4,song5,song6,song7,song8;
+    private ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
+
+        back=(ImageView) findViewById(R.id.back_icon);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Music.this,MainZone.class));
+            }
+        });
          song1=(Button)findViewById(R.id.song1);
          song1.setOnClickListener(this);
 
