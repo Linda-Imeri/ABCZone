@@ -4,96 +4,145 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="60dp"
+    android:layout_marginTop="0dp"
+    android:background="#CEFDC7"
     tools:context=".Numbers">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/one"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            app:srcCompat="@drawable/_one" />
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-        <ImageView
-            android:id="@+id/two"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+                app:srcCompat="@drawable/back" />
 
-            app:srcCompat="@drawable/two" />
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/three"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="-30dp"
 
-            app:srcCompat="@drawable/_three" />
+            android:textColor="#C3C4C3"
+            android:padding="10dp"
+            android:text="Learn Numbers"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
 
-        <ImageView
-            android:id="@+id/four"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/_one">
 
-            app:srcCompat="@drawable/_four" />
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/five"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_height="190dp"
+            android:background="@drawable/two">
 
-            app:srcCompat="@drawable/_five" />
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/six"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_three">
 
-            app:srcCompat="@drawable/_six" />
 
-        <ImageView
-            android:id="@+id/seven"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
 
-            app:srcCompat="@drawable/_seven" />
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/eight"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_four">
 
-            app:srcCompat="@drawable/_eight" />
 
-        <ImageView
-            android:id="@+id/nine"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
+        </RelativeLayout>
 
-            app:srcCompat="@drawable/_nine" />
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_five">
 
-        <ImageView
-            android:id="@+id/ten"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:adjustViewBounds="true"
 
-            app:srcCompat="@drawable/_ten" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_six">
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_seven">
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_eight">
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_nine">
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="190dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/_ten">
+
+
+
+        </RelativeLayout>
+
 
     </LinearLayout>
-
 
 </ScrollView>
