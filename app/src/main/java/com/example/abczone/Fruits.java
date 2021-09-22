@@ -2,17 +2,27 @@ package com.example.abczone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 public class Fruits extends AppCompatActivity {
-
+    private ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fruits);
+
+        back=(ImageView) findViewById(R.id.back_icon);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Fruits.this,MainZone.class));
+            }
+        });
+
         ImageView click1 = (ImageView) findViewById(R.id.apple);
         ImageView click2 = (ImageView) findViewById(R.id.apples);
         ImageView click3 = (ImageView) findViewById(R.id.banana);

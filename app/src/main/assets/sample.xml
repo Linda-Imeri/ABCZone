@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <countries>
-    <country id="1">
+    <daysClass id="1">
         <name>January</name>
         <capital>31</capital>
-    </country>
+    </daysClass>
 
-    <country id="2">
+    <daysClass id="2">
         <name>February</name>
         <capital>28</capital>
-    </country>
-    <country id="3">
+    </daysClass>
+    <daysClass id="3">
         <name>March</name>
         <capital>31</capital>
-    </country>
+    </daysClass>
 
-    <country id="4">
+    <daysClass id="4">
         <name>April</name>
         <capital>30</capital>
-    </country>
-    <country id="5">
+    </daysClass>
+    <daysClass id="5">
         <name>May</name>
         <capital>31</capital>
-    </country>
+    </daysClass>
 
-    <country id="6">
+    <daysClass id="6">
         <name>June</name>
         <capital>30</capital>
-    </country>
-    <country id="7">
+    </daysClass>
+    <daysClass id="7">
         <name>July</name>
         <capital>31</capital>
-    </country>
+    </daysClass>
 
-    <country id="8">
+    <daysClass id="8">
         <name>August</name>
         <capital>30</capital>
-    </country>
-    <country id="9">
+    </daysClass>
+    <daysClass id="9">
         <name>September</name>
         <capital>31</capital>
-    </country>
+    </daysClass>
 
-    <country id="10">
+    <daysClass id="10">
         <name>October</name>
         <capital>30</capital>
-    </country>
-    <country id="11">
+    </daysClass>
+    <daysClass id="11">
         <name>November</name>
         <capital>31</capital>
-    </country>
+    </daysClass>
 
-    <country id="12">
+    <daysClass id="12">
         <name>December</name>
         <capital>30</capital>
-    </country>
+    </daysClass>
 </countries>
