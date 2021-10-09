@@ -1,93 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutUs">
+    tools:context=".AboutUs"
+    android:background="@drawable/aboutusbg">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="10dp"
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="182dp"
-        android:layout_height="154dp"
-        android:backgroundTint="@color/gray"
-        android:text="Mobile learning is more than textbooks it is an ideal way to expand various faculties of children. "
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="289dp"
-         />
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp">
 
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="182dp"
-        android:height="154dp"
-        android:backgroundTint="@color/gray"
-        android:text="Experts say that apps in education can make children more interactive and activate better engagement between parents and children. "
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="435dp"
-       />
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="About Us"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="365dp"
-        android:layout_height="106dp"
-        android:text="ABCzone is an educational app to help your kids learn basic tracing starting from numbers 1 to 10, colors, fruits, vegetables... ABCzone includes fun, educational activities for kids! If your child is in kindergarden, or going to attend preschool, this is a free learning."
-        android:textColor="@color/gray"
-        android:textSize="15dp"
-        android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="161dp"
-       />
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="12dp"
+            android:layout_marginTop="-50dp"
+            android:text="Using education apps prepares children to use technology.
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="160dp"
-        android:layout_height="199dp"
-        app:srcCompat="@drawable/k"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="256dp"
-        tools:ignore="MissingConstraints" />
+  ABCzone is an educational app to help your kids learn basic tracing starting from numbers 1 to 10, colors, fruits, vegetables...
+ABCzone includes fun, educational activities for kids! If your child is in kindergarden, or going to attend preschool, this is a free learning.
+Is an open source and you can get it by downloading it. To use it you must create an account by filling the register form, then you can use the app whenever you want by loggin.
+This application was created by RM and  LI."
+            android:paddingLeft="50dp"
+            android:paddingRight="12dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="158dp"
-        android:layout_height="142dp"
-        app:srcCompat="@drawable/j"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="443dp"
-        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="382dp"
-        android:layout_height="115dp"
-        android:textSize="14dp"
-        android:text="ABCzone is open source and you can get it by downloading it. To use it you must create an account by filling the register form, then you can use the app whenever you want by loggin."
-        android:textStyle="bold|italic"
-        android:textColor="@color/gray"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="600dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="437dp"
-        android:layout_height="62dp"
-        android:text="ABOUT US"
-        android:backgroundTint="#AEBCAC"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="78dp"
-        tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="263dp"
-        android:layout_height="132dp"
-        app:srcCompat="@drawable/o"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="-2dp"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/back_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/back"
+        android:layout_marginLeft="1dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

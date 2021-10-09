@@ -53,7 +53,7 @@
         <Button
             android:id="@+id/button2"
             android:text="ORANGE"
-            android:layout_width="250"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:backgroundTint="#FF7801"
             android:layout_alignParentRight="true"
