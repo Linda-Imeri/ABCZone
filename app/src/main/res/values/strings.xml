@@ -39,4 +39,7 @@
         <item>But, dont know how to write</item>
         <item>Lets learn now</item>
     </string-array>
+
+    <string name="hyperlinks">This application was created by<a href="https://www.linkedin.com/in/rinesa-muharremi/"> RM</a> and<a href="https://www.linkedin.com/in/linda-imeri-40bbb5197/"> LI</a>.</string>
+
 </resources>
