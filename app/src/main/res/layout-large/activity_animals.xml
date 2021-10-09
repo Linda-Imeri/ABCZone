@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Animals">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:backgroundTint="#000000"
+                android:scaleType="fitStart"
+                android:src="@drawable/animalsbg" />
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:srcCompat="@drawable/back" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="460dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-110dp"
+            android:background="@drawable/round_corner"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFFFF">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="2dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/learnanimals" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="#D3EA93">
+
+            <ImageView
+                android:id="@+id/Cat"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="9dp"
+                android:fontFamily="sans-serif"
+                android:padding="25dp"
+                android:text="Cat"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="#FCDF74">
+
+            <ImageView
+                android:id="@+id/Dog"
+                app:srcCompat="@drawable/dog"
+                android:layout_width="187dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dog"
+                android:textStyle="bold|italic"
+                android:textSize="50sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:padding="25dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="#8CEEC0">
+
+            <ImageView
+                android:id="@+id/cow"
+                app:srcCompat="@drawable/bear"
+                android:layout_width="187dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bear"
+                android:textStyle="bold|italic"
+                android:textSize="50sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:padding="25dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="#95B9F2">
+
+            <ImageView
+                android:id="@+id/Tiger"
+                app:srcCompat="@drawable/tiger"
+                android:layout_width="187dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiger"
+                android:textStyle="bold|italic"
+                android:textSize="50sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:padding="25dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="#DD95F2">
+
+            <ImageView
+                android:id="@+id/Lion"
+                app:srcCompat="@drawable/lion"
+                android:layout_width="187dp"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lion"
+                android:textStyle="bold|italic"
+                android:textSize="50sp"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:padding="25dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="#EC99CE">
+
+            <ImageView
+                android:id="@+id/Elephant"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/elephant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elephant"
+                android:textStyle="bold|italic"
+                android:textSize="50sp"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:padding="25dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
