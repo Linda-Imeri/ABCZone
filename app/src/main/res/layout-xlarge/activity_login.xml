@@ -8,10 +8,10 @@
     tools:context=".Login">
 
     <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="524dp"
+            android:layout_width="900dp"
+            android:layout_height="925dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="300dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/round_corner"
             android:orientation="vertical"
@@ -22,17 +22,17 @@
             <TextView
                 android:id="@+id/login_text"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/login"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="80sp" />
 
             <EditText
                 android:id="@+id/LoginEmail"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="16dp"
                 app:backgroundTint="@color/orange"
@@ -40,6 +40,7 @@
                 android:drawableStart="@drawable/ic_email"
                 android:drawablePadding="12dp"
                 android:ems="12"
+                android:textSize="50dp"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:paddingStart="12dp"
@@ -48,12 +49,13 @@
             <EditText
                 android:id="@+id/LoginPassword"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="180dp"
                 android:layout_marginBottom="16dp"
                 app:backgroundTint="@color/orange"
                 android:drawableStart="@drawable/ic_lock"
                 android:drawablePadding="12dp"
                 android:ems="12"
+                android:textSize="50dp"
                 android:hint="@string/password"
                 android:textColorHint="@color/gray"
                 android:inputType="textPassword"
@@ -63,8 +65,9 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Login"
+            android:textSize="30dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="180dp"
             android:layout_marginTop="30dp"
             android:textColor="@color/white"
             android:background="@drawable/button_style"
@@ -82,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/forgot_password"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/join"
@@ -90,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="90dp"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="25sp"
                     android:text="@string/register" />
 
             </LinearLayout>
@@ -99,10 +102,10 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="-5dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/panda_sitting" />
 
 

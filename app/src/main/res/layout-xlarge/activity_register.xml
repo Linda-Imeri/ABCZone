@@ -9,10 +9,10 @@
 
 
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="524dp"
+        android:layout_width="900dp"
+        android:layout_height="900dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/round_corner"
         android:orientation="vertical"
@@ -24,17 +24,17 @@
         <TextView
             android:id="@+id/register_text"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="150dp"
             android:layout_marginTop="20dp"
             android:text="@string/register"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="60sp" />
 
         <EditText
             android:id="@+id/Email"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="150dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="16dp"
             app:backgroundTint="@color/orange"
@@ -43,6 +43,7 @@
             android:drawablePadding="12dp"
             android:ems="12"
             android:hint="@string/email"
+            android:textSize="40dp"
             android:inputType="textEmailAddress"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
@@ -50,12 +51,13 @@
         <EditText
             android:id="@+id/Password"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="150dp"
             android:layout_marginBottom="16dp"
             app:backgroundTint="@color/orange"
             android:textColorHint="@color/gray"
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="12dp"
+            android:textSize="40dp"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="12dp"
@@ -64,9 +66,10 @@
         <EditText
             android:id="@+id/ConfirmPassword"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="150dp"
             android:layout_marginBottom="16dp"
             app:backgroundTint="@color/orange"
+            android:textSize="40dp"
             android:textColorHint="@color/gray"
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="12dp"
@@ -78,9 +81,10 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="150dp"
             android:layout_marginTop="20dp"
             android:textColor="@color/white"
+            android:textSize="40dp"
             android:background="@drawable/button_style"
             android:text="@string/sign_up"
             />
@@ -88,10 +92,10 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="-5dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/panda_sitting" />
 
     <ImageView

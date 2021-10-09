@@ -21,7 +21,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="550dp"
                 android:backgroundTint="#000000"
                 android:scaleType="fitStart"
                 android:src="@drawable/colorbg" />
@@ -36,7 +36,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="400dp"
         android:paddingBottom="20dp"
         android:layout_margin="10dp"
         android:background="#FFFFFF">
@@ -44,7 +44,7 @@
         <Button
             android:text="RED"
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:backgroundTint="#FB1111"
             android:layout_alignParentLeft="true"
@@ -53,7 +53,7 @@
         <Button
             android:id="@+id/button2"
             android:text="ORANGE"
-            android:layout_width="wrap_content"
+            android:layout_width="250"
             android:layout_height="match_parent"
             android:backgroundTint="#FF7801"
             android:layout_alignParentRight="true"
@@ -62,7 +62,7 @@
         <Button
             android:id="@+id/button3"
             android:text="Yellow"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:backgroundTint="#FFF301"
             android:layout_centerHorizontal="true"
@@ -73,14 +73,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_margin="10dp"
-            android:layout_height="150dp"
+            android:layout_height="400dp"
             android:paddingBottom="20dp"
             android:background="#FFFFFF">
 
             <Button
                 android:id="@+id/button5"
                 android:text="BLUE"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:backgroundTint="#013DFF"
                 android:layout_alignParentLeft="true"
@@ -89,7 +89,7 @@
             <Button
                 android:id="@+id/button4"
                 android:text="GREEN"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:backgroundTint="#1BB22E"
                 android:layout_alignParentRight="true"
@@ -97,7 +97,7 @@
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:backgroundTint="#E100FF"
                 android:text="PURPLE"
@@ -109,13 +109,13 @@
         <RelativeLayout
             android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="400dp"
             android:paddingBottom="20dp"
             android:background="#FFFFFF ">
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:backgroundTint="#FFC0CB"
                 android:text="PINK"
@@ -125,7 +125,7 @@
             <Button
                 android:id="@+id/button8"
                 android:text="GREY"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:backgroundTint="#A8A6AF"
                 android:layout_alignParentRight="true"
@@ -133,7 +133,7 @@
 
             <Button
                 android:id="@+id/button9"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:text="BLACK"
                 android:layout_centerHorizontal="true"
