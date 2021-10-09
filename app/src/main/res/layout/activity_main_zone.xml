@@ -21,7 +21,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/main_menu"
-        app:itemIconSize="30dp"
+        app:itemIconSize="40dp"
         app:itemTextColor="@color/black"
         app:itemIconTint="@color/orange"
         app:itemHorizontalPadding="40dp"/>

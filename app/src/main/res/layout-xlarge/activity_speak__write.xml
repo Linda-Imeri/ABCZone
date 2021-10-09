@@ -17,12 +17,12 @@
         app:srcCompat="@drawable/back" />
 
     <TextView
-        android:layout_width="200dp"
+        android:layout_width="600dp"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="300dp"
         android:textAlignment="center"
         android:hint="Tap Mic to Speak"
         android:id="@+id/text"
@@ -30,10 +30,10 @@
 
     <ImageView
         android:id="@+id/speak"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="300dp"
         android:src="@drawable/mic"/>
 
 </LinearLayout>

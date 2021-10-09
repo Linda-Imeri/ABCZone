@@ -12,7 +12,7 @@
    <ImageView
        android:id="@+id/audio_book_cover"
        android:layout_width="match_parent"
-       android:layout_height="300dp"
+       android:layout_height="wrap_content"
        android:src="@drawable/rain_song"/>
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:text="Book name"
-        android:textSize="30sp"
+        android:textSize="50sp"
         android:textAllCaps="true"/>
 
     <SeekBar
@@ -32,11 +32,11 @@
         android:progress="40"
         android:backgroundTint="@color/orange"
         android:thumbTint="@color/orange"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"/>
+        android:layout_width="600dp"
+        android:layout_height="100dp"/>
 
     <RelativeLayout
-        android:layout_width="300dp"
+        android:layout_width="600dp"
         android:layout_height="wrap_content">
 
         <TextView
@@ -44,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/orange"
+            android:textSize="30sp"
             android:text="00:00"/>
 
         <TextView
@@ -52,40 +53,41 @@
             android:layout_height="wrap_content"
             android:textColor="@color/orange"
             android:layout_alignParentEnd="true"
+            android:textSize="30sp"
             android:text="00:00"/>
 
     </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/playBook"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/play_button" />
 
     <LinearLayout
-        android:layout_width="350dp"
+        android:layout_width="750dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/low_volume"/>
 
         <SeekBar
             android:id="@+id/seekBarVolume"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="600dp"
+            android:layout_height="100dp"
             android:progressTint="@color/orange"
             android:thumbTint="@color/orange"
             android:backgroundTint="@color/orange"
             />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/volume_up"
             />
     </LinearLayout>

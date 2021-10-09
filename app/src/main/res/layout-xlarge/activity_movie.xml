@@ -29,26 +29,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="-30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:textColor="@color/gray"
             android:padding="10dp"
             android:text="@string/watch_short_movies"
             android:textAllCaps="true"
-            android:textSize="20sp"
+            android:textSize="50sp"
             android:textStyle="bold" />
 
         <RelativeLayout
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_gravity="center"
-            android:layout_height="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/sheep">
 
             <Button
                 android:id="@+id/movie1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/play_icon"
                 />
@@ -56,16 +58,18 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:layout_height="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/pip">
 
             <Button
                 android:id="@+id/movie2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/play_icon"
                 />
@@ -73,48 +77,54 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="350dp"
-            android:layout_height="190dp"
+            android:layout_width="match_parent"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/theegyptian">
 
             <Button
                 android:id="@+id/movie3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/play_icon" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_gravity="center"
-            android:layout_height="190dp"
-            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/oktapodi">
 
             <Button
                 android:id="@+id/movie4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/play_icon" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_gravity="center"
-            android:layout_height="190dp"
-            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/thecontroller">
 
             <Button
                 android:id="@+id/movie5"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/play_icon" />
 
