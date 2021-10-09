@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.lang.ref.Reference;
 
 public class Child_registration extends AppCompatActivity {
-    FirebaseDatabase rootNode;
+    FirebaseDatabase database;
     DatabaseReference reference;
     private EditText childName, childAge;
     private CheckBox gender;
@@ -32,13 +32,20 @@ public class Child_registration extends AppCompatActivity {
         childAge=findViewById(R.id.childAge);
         gender=findViewById(R.id.gender);
         registerChild=findViewById(R.id.registerChild);
-        reference=FirebaseDatabase.getInstance().getReference().child("Childs");
+
+        //reference=FirebaseDatabase.getInstance().getReference().child("Child");
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Childs");
         registerChild.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String name = childName.getText().toString().trim();
                 String age = childAge.getText().toString().trim();
-                child=new Child(name,age);
+                //child=new Child(name,age);
+                //reference.push().setValue(child);
+                reference.setValue("Hello, World!");
+
+                Toast.makeText(Child_registration.this,"Succes",Toast.LENGTH_LONG).show();
 
             }
         });

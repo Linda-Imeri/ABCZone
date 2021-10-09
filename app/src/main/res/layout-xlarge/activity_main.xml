@@ -11,30 +11,31 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:text="@string/app_name"
         android:textColor="@color/white"
         android:textAlignment="center"
-        android:textSize="40sp"
+        android:textSize="80sp"
         android:textStyle="bold" />
 
 
     <TextView
         android:id="@+id/welcome_message"
-        android:layout_width="379dp"
-        android:layout_height="136dp"
-        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/best_way_to_learn_english_with_your_child"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="25sp" />
+        android:textSize="60sp" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        android:layout_width="500dp"
-        android:layout_height="550dp"
-        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="550dp"
         app:lottie_autoPlay="true"
         app:lottie_rawRes="@raw/lottie_animation"/>
 </RelativeLayout>

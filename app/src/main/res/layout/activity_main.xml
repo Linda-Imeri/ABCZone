@@ -19,12 +19,12 @@
         android:textSize="40sp"
         android:textStyle="bold" />
 
-
     <TextView
         android:id="@+id/welcome_message"
         android:layout_width="379dp"
-        android:layout_height="136dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/best_way_to_learn_english_with_your_child"
         android:textAlignment="center"
         android:textColor="@color/white"
