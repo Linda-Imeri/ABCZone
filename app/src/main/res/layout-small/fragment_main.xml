@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/learnnumbers"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/numbers" />
+                    <ImageView
+                        android:id="@+id/learnanimals"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/animals"  />
+                    <ImageView
+                        android:id="@+id/learnfruits"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/fruits"  />
+                    <ImageView
+                        android:id="@+id/learncolors"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/colors" />
+                    <ImageView
+                        android:id="@+id/learnmonths"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sports" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="-30dp"
+                android:textColor="@color/gray"
+                android:padding="10dp"
+                android:text="@string/learn_and_have_fun"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/orange"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/audio_books"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif"
+                        android:padding="25dp"/>
+
+                    <Button
+                        android:id="@+id/audio_book"
+                        android:layout_width="132dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/button_style"
+                        android:padding="2dp"
+                        android:text="@string/listen" />
+
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/story_teller"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="180dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#a6a832"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/short_movies"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif"
+                        android:padding="25dp"/>
+
+                    <Button
+                        android:id="@+id/watch"
+                        android:layout_width="132dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/button_style"
+                        android:padding="2dp"
+                        android:text="@string/watch" />
+
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bear_videos"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="390dp"
+                android:layout_height="180dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#a84432"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/music"
+                        android:textSize="30sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/white"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="25dp"/>
+
+                    <Button
+                        android:id="@+id/listen_music"
+                        android:layout_width="132dp"
+                        android:layout_height="40dp"
+                        android:text="@string/listen"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/button_style"
+                        android:padding="2dp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentBottom="true"/>
+
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/penguin_music"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
