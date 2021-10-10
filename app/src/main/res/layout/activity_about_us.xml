@@ -40,15 +40,21 @@
             android:paddingEnd="12dp"
             android:layout_marginTop="-50dp"
             android:text="Using education apps prepares children to use technology.
-
-  ABCzone is an educational app to help your kids learn basic tracing starting from numbers 1 to 10, colors, fruits, vegetables...
+ABCzone is an educational app to help your kids learn basic tracing starting from numbers 1 to 10, colors, fruits, vegetables...
 ABCzone includes fun, educational activities for kids! If your child is in kindergarden, or going to attend preschool, this is a free learning.
-Is an open source and you can get it by downloading it. To use it you must create an account by filling the register form, then you can use the app whenever you want by loggin.
-This application was created by RM and  LI."
+Is an open source and you can get it by downloading it. To use it you must create an account by filling the register form, then you can use the app whenever you want by loggin."
             android:paddingLeft="50dp"
             android:paddingRight="12dp" />
 
-
+        <EditText
+            android:id="@+id/hyperlinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:layout_marginTop="-10dp"
+            android:text="@string/hyperlinks"
+            android:paddingLeft="50dp"
+            android:paddingRight="12dp" />
     </LinearLayout>
 
     <ImageView
