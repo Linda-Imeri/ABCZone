@@ -38,6 +38,7 @@ public class ListenAudioBooks extends AppCompatActivity implements View.OnClickL
             audio_book_name=findViewById(R.id.audio_book_name);
             playBook=findViewById(R.id.playBook);
             playBook.setOnClickListener(this);
+            cover=findViewById(R.id.audio_book_cover);
 
             Intent mIntent = getIntent();
             int intValue = mIntent.getIntExtra("intVariableName", 0);
@@ -48,22 +49,29 @@ public class ListenAudioBooks extends AppCompatActivity implements View.OnClickL
             {
                 if(intValue == R.id.read1) {
                     url="https://firebasestorage.googleapis.com/v0/b/abczone-4f172.appspot.com/o/Audio_Books%2Fcowboy.mp3?alt=media&token=23d47b58-ac0b-4b67-b6d4-103a92aa20aa";
-                    audio_book_name.setText("Cowboy");                }
+                    audio_book_name.setText("Cowboy");
+                    cover.setImageResource(R.drawable.cowboy);
+
+                }
                 else if(intValue == R.id.read2) {
                     url="https://firebasestorage.googleapis.com/v0/b/abczone-4f172.appspot.com/o/Audio_Books%2Ftheantanddove.mp3?alt=media&token=fbe08a47-a9a6-439b-a67b-b4d433a82c73";
                     audio_book_name.setText("The Ant and The Dove");
+                    cover.setImageResource(R.drawable.theantanddove);
                 }
                 else if(intValue == R.id.read3) {
                     url="https://firebasestorage.googleapis.com/v0/b/abczone-4f172.appspot.com/o/Audio_Books%2Ftheonion.mp3?alt=media&token=e42bf904-ae4f-47c9-bbcd-e3acd402582f";
                     audio_book_name.setText("The Onion");
+                    cover.setImageResource(R.drawable.theonion);
                 }
                 else if(intValue == R.id.read4) {
                     url="https://firebasestorage.googleapis.com/v0/b/abczone-4f172.appspot.com/o/Audio_Books%2Fspeakfirst.mp3?alt=media&token=c155d8de-3c35-47c5-9a90-7ae3441c9de8";
                     audio_book_name.setText("Speak first and lose");
+                    cover.setImageResource(R.drawable.speakfirst);
                 }
                 else if(intValue == R.id.read5) {
                     url="https://firebasestorage.googleapis.com/v0/b/abczone-4f172.appspot.com/o/Audio_Books%2Ftheants.mp3?alt=media&token=15d69ff3-02f9-45ea-b2a0-370d6598efd2";
                     audio_book_name.setText("The Ants and The Pen");
+                    cover.setImageResource(R.drawable.theants);
                 }
 
             }

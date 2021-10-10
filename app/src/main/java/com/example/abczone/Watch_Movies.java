@@ -50,12 +50,6 @@ public class Watch_Movies extends AppCompatActivity {
             }
 
             videoView.setVideoURI(Uri.parse(videoPath));
-         /*   videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                @Override
-                public void onPrepared(MediaPlayer mp) {
-                    mp.setVolume(50, 50);
-                }
-            });*/
 
             MediaController mediaController = new MediaController(this);
             videoView.setMediaController(mediaController);

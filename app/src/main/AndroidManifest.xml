@@ -12,11 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ABCZone">
 
-        <activity android:name=".Child_registration"></activity>
         <activity android:name=".Watch_Movies" />
         <activity android:name=".Movie" />
         <activity android:name=".Speak_Write" />
-        <activity android:name=".AboutUs" />
         <activity android:name=".Listen_Music" />
         <activity android:name=".Numbers" />
         <activity android:name=".Fruits" />

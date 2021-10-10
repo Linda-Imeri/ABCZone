@@ -82,7 +82,8 @@ public class MainZone extends AppCompatActivity {
                         startActivity(new Intent(MainZone.this,Login.class));
                         break;
                     case R.id.aboutUs:
-                        startActivity(new Intent(MainZone.this,AboutUs.class));
+                        fragment=new AboutUs_Fragment();
+                        loadFragment(fragment);
                         break;
                     default:
                         return true;

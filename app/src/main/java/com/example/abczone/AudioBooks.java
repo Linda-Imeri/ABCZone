@@ -35,8 +35,6 @@ public class AudioBooks extends AppCompatActivity implements View.OnClickListene
         read4.setOnClickListener(this);
         read5=(Button)findViewById(R.id.read5);
         read5.setOnClickListener(this);
-
-
     }
 
     @Override
