@@ -34,6 +34,9 @@
     <string name="ant_and_dove">Ant and Dove</string>
     <string name="cowboy">Cowboy</string>
     <string name="watch_short_movies">Watch short movies</string>
+    <string name="child_s_name">Child\'s name</string>
+    <string name="age">Age</string>
+    <string name="welcome">Welcome</string>
     <string-array name="text">
         <item>Know how to spell...?</item>
         <item>But, dont know how to write</item>

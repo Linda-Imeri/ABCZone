@@ -16,14 +16,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText email,password,confirmPassword;
+    private EditText email,password,age,name;
     private ImageView back;
     private Button register;
     private TextView login;
@@ -45,9 +47,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         register.setOnClickListener(this);
 
 
+        age=(EditText) findViewById(R.id.age);
+        name=(EditText)findViewById(R.id.fullName);
         email=(EditText) findViewById(R.id.Email);
         password=(EditText) findViewById(R.id.Password);
-        confirmPassword=(EditText) findViewById(R.id.ConfirmPassword);
     }
 
     @Override
@@ -69,9 +72,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
         String Email=email.getText().toString().trim();
         String Password=password.getText().toString().trim();
-        //String ConfirmPassword=confirmPassword.getText().toString().trim();
-
-
+        String ChildName=name.getText().toString().trim();
+        String ChildAge=age.getText().toString().trim();
 
         if(Email.isEmpty()){
             email.setError("Email is required!");
@@ -97,6 +99,18 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             return;
         }
 
+        if(ChildAge.isEmpty()){
+            age.setError("Age is required");
+            age.requestFocus();
+            return;
+        }
+
+
+        if(ChildName.isEmpty()){
+            name.setError("Name is required");
+            name.requestFocus();
+            return;
+        }
 
         //register user in firebase
         mAuth.createUserWithEmailAndPassword(Email,Password)
@@ -104,11 +118,26 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
-                            Toast.makeText(Register.this, "User Created.", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),MainZone.class));
+                            User user=new User(Email,ChildName,ChildAge);
+
+                            FirebaseDatabase.getInstance().getReference("Users")
+                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if(task.isSuccessful()){
+                                        Toast.makeText(Register.this, "User Created.", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(getApplicationContext(),MainZone.class));
+                                    }
+                                    else
+                                    {
+                                        Toast.makeText(Register.this,"Failed to register" + task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                                    }
+                                }
+                            });
                         }
                         else{
-                            Toast.makeText(Register.this,"Failed to register" + task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                            Toast.makeText(Register.this,"Failed to register. " + task.getException().getMessage(),Toast.LENGTH_LONG).show();
 
                         }
                     }

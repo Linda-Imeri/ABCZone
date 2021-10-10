@@ -58,7 +58,6 @@ public class MainZone extends AppCompatActivity {
         toggle.syncState();
         navigationView=findViewById(R.id.nav_view);
 
-
         loadFragment(new MainFragment());
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -91,8 +90,6 @@ public class MainZone extends AppCompatActivity {
                 return true;
             }
         });
-
-
     }
 
     private void loadFragment(Fragment fragment) {
@@ -101,7 +98,6 @@ public class MainZone extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame,fragment).commit();
         drawerLayout.closeDrawer(GravityCompat.START);
         fragmentTransaction.addToBackStack(null);
-
     }
 
     private void showChangeLanguageDialog() {

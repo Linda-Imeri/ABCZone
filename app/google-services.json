@@ -1,20 +1,21 @@
 {
   "project_info": {
-    "project_number": "218546733243",
-    "project_id": "abczone-68e45",
-    "storage_bucket": "abczone-68e45.appspot.com"
+    "project_number": "103041048132",
+    "firebase_url": "https://abczone-4f172-default-rtdb.firebaseio.com",
+    "project_id": "abczone-4f172",
+    "storage_bucket": "abczone-4f172.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:218546733243:android:7ce4d7c332c1536ba0e99e",
+        "mobilesdk_app_id": "1:103041048132:android:6e9dcbd55b796939656611",
         "android_client_info": {
           "package_name": "com.example.abczone"
         }
       },
       "oauth_client": [
         {
-          "client_id": "218546733243-hgrc894rkuacc7rfbagc0i8vl9vhmev3.apps.googleusercontent.com",
+          "client_id": "103041048132-ednfo51fogc06la8ecuf974bi8a3k6e6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +28,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "218546733243-hgrc894rkuacc7rfbagc0i8vl9vhmev3.apps.googleusercontent.com",
+              "client_id": "103041048132-ednfo51fogc06la8ecuf974bi8a3k6e6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

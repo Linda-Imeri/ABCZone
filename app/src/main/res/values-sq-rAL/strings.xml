@@ -35,6 +35,9 @@
     <string name="ant_and_dove">Ant and Dove</string>
     <string name="cowboy">Cowboy</string>
     <string name="watch_short_movies">Shiko filma të shkurtër </string>
+    <string name="child_s_name">Child\'s name</string>
+    <string name="age">Age</string>
+    <string name="welcome">Welcome</string>
     <string-array name="text">
         <item>Mënyra më e mirë për të mësuar </item>
         <item>Kënaquni me ABCZone</item>

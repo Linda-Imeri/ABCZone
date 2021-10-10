@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orange"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileFragment">
 
 
@@ -11,16 +13,45 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="50dp"
+            android:padding="40dp">
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/childprofile"/>
 
+            <TextView
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/kids" />
-            
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/nameChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/child_s_name"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/ageChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="35dp"
+                android:textSize="20sp"/>
 
         </LinearLayout>
 
