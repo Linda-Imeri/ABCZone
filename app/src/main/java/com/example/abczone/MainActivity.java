@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(getApplicationContext(), Child_registration.class);
+                Intent i = new Intent(getApplicationContext(), MainZone.class);
                 startActivity(i);
             }
-        }, 6000);
+        }, 4000);
     }
 }
 

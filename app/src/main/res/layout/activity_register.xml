@@ -62,18 +62,24 @@
             android:paddingEnd="12dp" />
 
         <EditText
-            android:id="@+id/ConfirmPassword"
+            android:id="@+id/fullName"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginBottom="16dp"
-            app:backgroundTint="@color/orange"
-            android:textColorHint="@color/gray"
-            android:drawableStart="@drawable/ic_lock"
-            android:drawablePadding="12dp"
-            android:hint="@string/confirmpassword"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:paddingStart="12dp"
-            android:paddingEnd="12dp" />
+            android:paddingEnd="12dp"
+            android:hint="@string/child_s_name"
+            android:textColorHint="@color/gray"
+            />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Age"
+            android:inputType="number"
+            android:textSize="24sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login"
