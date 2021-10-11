@@ -37,3 +37,16 @@ Ofruesi - Age og Learning, Inc.
 <br><br>
 <b>Images</b>
 ![1](https://user-images.githubusercontent.com/58374578/136781965-632e9d76-403d-483a-a1af-de6aa6283c24.PNG)
+![2](https://user-images.githubusercontent.com/58374578/136782158-fe35afd7-9cbc-4f13-9deb-ba7a70a1d150.PNG)
+![3](https://user-images.githubusercontent.com/58374578/136782161-f2de5aa2-a3c5-4b02-98c4-2ea20a382642.PNG)
+![4](https://user-images.githubusercontent.com/58374578/136782164-a96a7bda-674f-4e61-8e09-aad8252c7a0f.PNG)
+![5](https://user-images.githubusercontent.com/58374578/136782166-5394f564-e4d5-4098-a683-9062470ea89c.PNG)
+![6](https://user-images.githubusercontent.com/58374578/136782167-ff57d1d1-40f0-449d-ad6d-941ed0c4a6b2.PNG)
+![7](https://user-images.githubusercontent.com/58374578/136782171-fe61956a-1b2a-4371-9277-25aa4cc13a59.PNG)
+![8](https://user-images.githubusercontent.com/58374578/136782173-1ff46f04-dfc0-4712-bfae-fc45f94b84ae.PNG)
+![9](https://user-images.githubusercontent.com/58374578/136782175-9c0c0f5a-6231-4c48-b200-52ae8a49f309.PNG)
+![10](https://user-images.githubusercontent.com/58374578/136782178-80e0d12c-4543-408e-baff-c0f23a7cfe8f.PNG)
+![11](https://user-images.githubusercontent.com/58374578/136782182-0e8028ee-d29f-4623-af13-371bcf209c65.PNG)
+![12](https://user-images.githubusercontent.com/58374578/136782184-811d4f68-bb05-4b2d-b967-7b99f1b2c453.PNG)
+
+
