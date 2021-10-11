@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/aboutusbg"
+    tools:context=".AboutUs_Fragment">
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="1500dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="About Us"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="100sp" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="1100dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="30dp"
+            android:paddingLeft="50dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            android:textSize="50dp"
+            android:text="Using education apps prepares children to use technology.
+ABCzone is an educational app to help your kids learn basic tracing starting from numbers 1 to 10, colors, fruits, vegetables...
+ABCzone includes fun, educational activities for kids! If your child is in kindergarden, or going to attend preschool, this is a free learning.
+Is an open source and you can get it by downloading it. To use it you must create an account by filling the register form, then you can use the app whenever you want by loggin." />
+
+        <EditText
+            android:id="@+id/hyperlinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:paddingStart="30dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="12dp"
+            android:textSize="40dp"
+            android:text="@string/hyperlinks" />
+    </LinearLayout>
+
+
+</FrameLayout>
