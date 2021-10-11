@@ -23,9 +23,9 @@ public class AboutUs_Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         Bundle bundle = getActivity().getIntent().getExtras();
-        View view=inflater.inflate(R.layout.fragment_about_us_, container, false);
+        View view = inflater.inflate(R.layout.fragment_about_us_, container, false);
 
-        edittext=view.findViewById(R.id.hyperlinks);
+        edittext = view.findViewById(R.id.hyperlinks);
         edittext.setMovementMethod(LinkMovementMethod.getInstance());
 
         return view;

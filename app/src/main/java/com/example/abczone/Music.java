@@ -9,46 +9,47 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Music extends AppCompatActivity implements View.OnClickListener{
-    private Button song1,song2,song3,song4,song5,song6,song7,song8;
+public class Music extends AppCompatActivity implements View.OnClickListener {
+    private Button song1, song2, song3, song4, song5, song6, song7, song8;
     private ImageView back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
 
-        back=(ImageView) findViewById(R.id.back_icon);
+        back = (ImageView) findViewById(R.id.back_icon);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Music.this,MainZone.class));
+                startActivity(new Intent(Music.this, MainZone.class));
             }
         });
-         song1=(Button)findViewById(R.id.song1);
-         song1.setOnClickListener(this);
+        song1 = (Button) findViewById(R.id.song1);
+        song1.setOnClickListener(this);
 
-        song2=(Button)findViewById(R.id.song2);
+        song2 = (Button) findViewById(R.id.song2);
         song2.setOnClickListener(this);
 
-        song3=(Button)findViewById(R.id.song3);
+        song3 = (Button) findViewById(R.id.song3);
         song3.setOnClickListener(this);
 
-        song4=(Button)findViewById(R.id.song4);
+        song4 = (Button) findViewById(R.id.song4);
         song4.setOnClickListener(this);
 
-        song5=(Button)findViewById(R.id.song5);
+        song5 = (Button) findViewById(R.id.song5);
         song5.setOnClickListener(this);
 
-        song6=(Button)findViewById(R.id.song6);
+        song6 = (Button) findViewById(R.id.song6);
         song6.setOnClickListener(this);
 
-        song7=(Button)findViewById(R.id.song7);
+        song7 = (Button) findViewById(R.id.song7);
         song7.setOnClickListener(this);
 
-        song8=(Button)findViewById(R.id.song8);
+        song8 = (Button) findViewById(R.id.song8);
         song8.setOnClickListener(this);
 
-        }
+    }
 
     @Override
     public void onClick(View v) {
@@ -57,7 +58,7 @@ public class Music extends AppCompatActivity implements View.OnClickListener{
         intent.putExtra("intVariableName", v.getId()); //where v is button that is cliked, you will find it as a parameter to onClick method
         startActivity(intent);
 
-        }
+    }
 }
 
 

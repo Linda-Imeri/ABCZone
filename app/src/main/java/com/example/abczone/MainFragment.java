@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class MainFragment extends Fragment implements View.OnClickListener{
+public class MainFragment extends Fragment implements View.OnClickListener {
 
-    private Button audioBook,listenMusic,watch;
-    private ImageView numbers,animals,fruits,colors,months;
+    private Button audioBook, listenMusic, watch;
+    private ImageView numbers, animals, fruits, colors, months;
 
     public MainFragment() {
         // Required empty public constructor
@@ -26,23 +26,23 @@ public class MainFragment extends Fragment implements View.OnClickListener{
                              Bundle savedInstanceState) {
 
         Bundle bundle = getActivity().getIntent().getExtras();
-        View view=inflater.inflate(R.layout.fragment_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-        watch=view.findViewById(R.id.watch);
+        watch = view.findViewById(R.id.watch);
         watch.setOnClickListener(this);
-        audioBook=view.findViewById(R.id.audio_book);
+        audioBook = view.findViewById(R.id.audio_book);
         audioBook.setOnClickListener(this);
-        listenMusic=view.findViewById(R.id.listen_music);
+        listenMusic = view.findViewById(R.id.listen_music);
         listenMusic.setOnClickListener(this);
-        numbers=view.findViewById(R.id.learnnumbers);
+        numbers = view.findViewById(R.id.learnnumbers);
         numbers.setOnClickListener(this);
-        animals=view.findViewById(R.id.learnanimals);
+        animals = view.findViewById(R.id.learnanimals);
         animals.setOnClickListener(this);
-        fruits=view.findViewById(R.id.learnfruits);
+        fruits = view.findViewById(R.id.learnfruits);
         fruits.setOnClickListener(this);
-        colors=view.findViewById(R.id.learncolors);
+        colors = view.findViewById(R.id.learncolors);
         colors.setOnClickListener(this);
-        months=view.findViewById(R.id.learnmonths);
+        months = view.findViewById(R.id.learnmonths);
         months.setOnClickListener(this);
 
         return view;
@@ -51,45 +51,45 @@ public class MainFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.audio_book:
-                Intent intentAudio = new Intent(getActivity().getApplicationContext(),AudioBooks.class);
+                Intent intentAudio = new Intent(getActivity().getApplicationContext(), AudioBooks.class);
                 startActivity(intentAudio);
                 break;
 
             case R.id.listen_music:
-                Intent intentMusic= new Intent(getActivity().getApplicationContext(),Music.class);
+                Intent intentMusic = new Intent(getActivity().getApplicationContext(), Music.class);
                 startActivity(intentMusic);
                 break;
             case R.id.watch:
-                Intent intentWatch = new Intent(getActivity().getApplicationContext(),Movie.class);
+                Intent intentWatch = new Intent(getActivity().getApplicationContext(), Movie.class);
                 startActivity(intentWatch);
                 break;
 
             case R.id.learnnumbers:
-                Intent intentNumbers= new Intent(getActivity().getApplicationContext(),Numbers.class);
+                Intent intentNumbers = new Intent(getActivity().getApplicationContext(), Numbers.class);
                 startActivity(intentNumbers);
                 break;
 
             case R.id.learncolors:
-                Intent intentColors= new Intent(getActivity().getApplicationContext(),Colors.class);
+                Intent intentColors = new Intent(getActivity().getApplicationContext(), Colors.class);
                 startActivity(intentColors);
                 break;
 
             case R.id.learnanimals:
-                Intent intentAnimals= new Intent(getActivity().getApplicationContext(),Animals.class);
+                Intent intentAnimals = new Intent(getActivity().getApplicationContext(), Animals.class);
                 startActivity(intentAnimals);
                 break;
 
             case R.id.learnfruits:
-                Intent intentFruits=new Intent(getActivity().getApplicationContext(),Fruits.class);
+                Intent intentFruits = new Intent(getActivity().getApplicationContext(), Fruits.class);
                 startActivity(intentFruits);
                 break;
 
             case R.id.learnmonths:
-                Intent intentMonths=new Intent(getActivity().getApplicationContext(), MonthsDays.class);
+                Intent intentMonths = new Intent(getActivity().getApplicationContext(), MonthsDays.class);
                 startActivity(intentMonths);
                 break;
+        }
     }
-}
 }

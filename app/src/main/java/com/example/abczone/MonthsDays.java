@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class MonthsDays extends AppCompatActivity {
 
     TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +34,7 @@ public class MonthsDays extends AppCompatActivity {
             ArrayList<Days_Class> countries = parseXML(parser);
             String text = "";
             for (Days_Class daysClass : countries) {
-                text +=" Month: " + daysClass.getName() +" has " + daysClass.getCapital() + "days."+"\n\n";
+                text += " Month: " + daysClass.getName() + " has " + daysClass.getCapital() + "days." + "\n\n";
             }
             textView.setText(text);
         } catch (XmlPullParserException e) {
@@ -42,12 +43,13 @@ public class MonthsDays extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    private ArrayList<Days_Class> parseXML(XmlPullParser parser) throws XmlPullParserException, IOException{
-        ArrayList<Days_Class> countries=null;
-        int eventType=parser.getEventType();
-        Days_Class daysClass =null;
 
-        while (eventType!=XmlPullParser.END_DOCUMENT) {
+    private ArrayList<Days_Class> parseXML(XmlPullParser parser) throws XmlPullParserException, IOException {
+        ArrayList<Days_Class> countries = null;
+        int eventType = parser.getEventType();
+        Days_Class daysClass = null;
+
+        while (eventType != XmlPullParser.END_DOCUMENT) {
             String name;
             switch (eventType) {
                 case XmlPullParser.START_DOCUMENT:
@@ -72,7 +74,7 @@ public class MonthsDays extends AppCompatActivity {
                         countries.add(daysClass);
                     }
             }
-            eventType= parser.next();
+            eventType = parser.next();
         }
         return countries;
     }

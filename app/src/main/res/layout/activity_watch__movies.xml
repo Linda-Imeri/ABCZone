@@ -5,28 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Watch_Movies"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Watch_Movies">
 
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_marginTop="-10dp"
         android:layout_marginLeft="-10dp"
-        android:src="@drawable/movie_time"/>
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/movie_time" />
 
     <TextView
         android:id="@+id/movie_name"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-165dp"
         android:layout_marginLeft="180dp"
-        android:textColor="@color/black"
+        android:layout_marginTop="-165dp"
+        android:gravity="center"
         android:text="Movie Name"
-        android:textStyle="bold|italic"
+        android:textColor="@color/black"
         android:textSize="30sp"
-        android:gravity="center"/>
+        android:textStyle="bold|italic" />
 
 
     <FrameLayout
@@ -37,11 +37,9 @@
         <VideoView
             android:id="@+id/video_view"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            />
+            android:layout_height="300dp" />
 
     </FrameLayout>
-
 
 
 </LinearLayout>

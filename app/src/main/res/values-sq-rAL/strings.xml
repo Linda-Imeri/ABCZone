@@ -5,44 +5,46 @@
     <string name="register">Regjistrimi</string>
     <string name="email">Emaili</string>
     <string name="sign_up">Regjistrohu</string>
-    <string name="button">Buttoni</string>
-    <string name="already_have_an_account_login_here">Tashmë keni një llogari? Identifikohuni këtu</string>
+    <string name="already_have_an_account_login_here">Keni llogari? Kyqu</string>
     <string name="confirmpassword">Konfirmo fjalëkalimin</string>
     <string name="forgot_password">Keni harruar fjalëkalimin?</string>
-    <string name="login">Identifikohuni</string>
+    <string name="login">Kyqu</string>
     <string name="navigation_open">Hap navigacionin</string>
     <string name="navigation_close">Mbyll navigacionin</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Përshendetje fragment i zbrazur</string>
     <string name="read">Lexo</string>
-    <string name="stories">Histori</string>
+    <string name="stories">Tregime</string>
     <string name="open">Hap</string>
     <string name="close">Mbyll</string>
     <string name="abczone">ABCZone</string>
-    <string name="best_way_to_learn_english_with_your_child">Mënyra më e mirë për të mësuar anglisht me fëmijën tuaj</string>
+    <string name="best_way_to_learn_english_with_your_child">Mënyra më e mirë për të mësuar me fëmijën tuaj</string>
     <string name="start_to_learn">Fillo të mësosh </string>
-    <string name="reset_password">Reset Password</string>
-    <string name="learn_and_have_fun">Learn and have fun</string>
-    <string name="audio_books">Audio Books</string>
-    <string name="listen">Listen</string>
-    <string name="music">Music</string>
-    <string name="short_movies">Short Movies</string>
-    <string name="watch">Watch</string>
-    <string name="lang">Lang</string>
+    <string name="reset_password">Rikthe fjalëkalimin</string>
+    <string name="learn_and_have_fun">Mëso dhe argëtohu</string>
+    <string name="audio_books">Libra audio</string>
+    <string name="listen">Dëgjo</string>
+    <string name="music">Muzikë</string>
+    <string name="short_movies">Filma të shkurtër</string>
+    <string name="watch">Shiko</string>
+    <string name="lang">Gjuha</string>
     <string name="ants_and_pen">Ants and pen</string>
     <string name="speak_first">Speak first</string>
     <string name="the_onion">The Onion</string>
     <string name="ant_and_dove">Ant and Dove</string>
     <string name="cowboy">Cowboy</string>
     <string name="watch_short_movies">Shiko filma të shkurtër </string>
-    <string name="child_s_name">Child\'s name</string>
-    <string name="age">Age</string>
-    <string name="welcome">Welcome</string>
+    <string name="child_s_name">Emri i fëmijës</string>
+    <string name="age">Mosha</string>
+    <string name="welcome">Mirëseerdhët</string>
     <string-array name="text">
         <item>Mënyra më e mirë për të mësuar </item>
         <item>Kënaquni me ABCZone</item>
         <item>Argëtohuni</item>
     </string-array>
     <string name="hyperlinks">This application was created by<a href="https://www.linkedin.com/in/rinesa-muharremi/"> RM</a> and<a href="https://www.linkedin.com/in/linda-imeri-40bbb5197/"> LI</a>.</string>
+    <string name="home">Shtëpia</string>
+    <string name="language">Gjuha</string>
+    <string name="profile">Profili</string>
+    <string name="about_us">Rreth nesh</string>
+    <string name="logout">Dil</string>
 
 </resources>

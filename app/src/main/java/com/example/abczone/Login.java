@@ -50,8 +50,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
         mAuth = FirebaseAuth.getInstance();
 
-        if(mAuth.getCurrentUser()!=null){
-            startActivity(new Intent(getApplicationContext(),MainZone.class));
+        if (mAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), MainZone.class));
             finish();
         }
     }
@@ -66,7 +66,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.join:
-                startActivity(new Intent(this,Register.class));
+                startActivity(new Intent(this, Register.class));
                 break;
 
             case R.id.ForgotPassword:
@@ -78,7 +78,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private void userLogin() {
         String Email = loginEmail.getText().toString().trim();
         String Password = loginPassword.getText().toString().trim();
-
 
         if (Email.isEmpty()) {
             loginEmail.setError("Email is required!");
@@ -104,8 +103,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                   //Snackbar snack = Snackbar.make(rel, "You have been logged in! ", Snackbar.LENGTH_LONG);
-                    //snack.show();
                     startActivity(new Intent(Login.this, MainZone.class));
                 } else {
                     Toast.makeText(Login.this, "Failed", Toast.LENGTH_LONG).show();

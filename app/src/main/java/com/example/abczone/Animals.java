@@ -10,16 +10,17 @@ import android.widget.ImageView;
 
 public class Animals extends AppCompatActivity {
     private ImageView back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animals);
 
-        back=(ImageView) findViewById(R.id.back_icon);
+        back = (ImageView) findViewById(R.id.back_icon);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Animals.this,MainZone.class));
+                startActivity(new Intent(Animals.this, MainZone.class));
             }
         });
 
@@ -59,7 +60,8 @@ public class Animals extends AppCompatActivity {
                         break;
                     case R.id.Elephant:
                         mp6.start();
-                        break;}
+                        break;
+                }
             }
         };
         click1.setOnClickListener(elem);

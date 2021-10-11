@@ -22,8 +22,9 @@ import com.google.firebase.database.ValueEventListener;
 public class ProfileFragment extends Fragment {
     private FirebaseUser user;
     private DatabaseReference reference;
-    private TextView fullName,email,age;
+    private TextView fullName, email, age;
     private String userID;
+
     public ProfileFragment() {
         // Required empty public constructor
     }
@@ -34,36 +35,35 @@ public class ProfileFragment extends Fragment {
 
         // Inflate the layout for this fragment
         Bundle bundle = getActivity().getIntent().getExtras();
-        View view=inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-       user= FirebaseAuth.getInstance().getCurrentUser();
-       reference= FirebaseDatabase.getInstance().getReference("Users");
-       userID=user.getUid();
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Users");
+        userID = user.getUid();
 
-       fullName=view.findViewById(R.id.nameChild);
-       email=view.findViewById(R.id.email);
-       age=view.findViewById(R.id.ageChild);
+        fullName = view.findViewById(R.id.nameChild);
+        email = view.findViewById(R.id.email);
+        age = view.findViewById(R.id.ageChild);
 
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User userProfile=snapshot.getValue(User.class);
+                User userProfile = snapshot.getValue(User.class);
 
-                if(userProfile != null){
-                    String fullNameProfile=userProfile.name;
-                    String Email=userProfile.email;
-                    String Age=userProfile.age;
+                if (userProfile != null) {
+                    String fullNameProfile = userProfile.name;
+                    String Email = userProfile.email;
+                    String Age = userProfile.age;
 
-                    fullName.append(": "+fullNameProfile);
-                    email.append(": "+Email);
-                    age.append(": "+Age);
+                    fullName.append(": " + fullNameProfile);
+                    email.append(": " + Email);
+                    age.append(": " + Age);
 
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-               //Toast.makeText(ProfileFragment.this,"Something went wrong",Toast.LENGTH_LONG).show();
                 fullName.setText("User not found");
 
             }

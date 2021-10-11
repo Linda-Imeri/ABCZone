@@ -3,37 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/black"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".ListenAudioBooks">
 
-   <ImageView
-       android:id="@+id/audio_book_cover"
-       android:layout_width="match_parent"
-       android:layout_height="300dp"
-       android:src="@drawable/rain_song"/>
+    <ImageView
+        android:id="@+id/audio_book_cover"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/rain_song" />
 
     <TextView
         android:id="@+id/audio_book_name"
-        android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
         android:text="Book name"
-        android:textSize="30sp"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
     <SeekBar
         android:id="@+id/seekBarTime"
-        android:layout_marginTop="50dp"
-        android:progressTint="@color/orange"
-        android:progress="40"
-        android:backgroundTint="@color/orange"
-        android:thumbTint="@color/orange"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/orange"
+        android:progress="40"
+        android:progressTint="@color/orange"
+        android:thumbTint="@color/orange" />
 
     <RelativeLayout
         android:layout_width="300dp"
@@ -43,16 +43,16 @@
             android:id="@+id/audioTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/orange"
-            android:text="00:00"/>
+            android:text="00:00"
+            android:textColor="@color/orange" />
 
         <TextView
             android:id="@+id/audioDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/orange"
             android:layout_alignParentEnd="true"
-            android:text="00:00"/>
+            android:text="00:00"
+            android:textColor="@color/orange" />
 
     </RelativeLayout>
 
@@ -72,22 +72,20 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/low_volume"/>
+            android:src="@drawable/low_volume" />
 
         <SeekBar
             android:id="@+id/seekBarVolume"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:progressTint="@color/orange"
-            android:thumbTint="@color/orange"
             android:backgroundTint="@color/orange"
-            />
+            android:progressTint="@color/orange"
+            android:thumbTint="@color/orange" />
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/volume_up"
-            />
+            android:src="@drawable/volume_up" />
     </LinearLayout>
 
 </LinearLayout>

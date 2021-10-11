@@ -31,17 +31,17 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/orange"
-                android:layout_margin="20dp">
+                android:layout_margin="20dp"
+                android:background="@color/orange">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="25dp"
                     android:text="@string/cowboy"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:fontFamily="sans-serif"
-                    android:padding="25dp"/>
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/read1"
@@ -60,10 +60,10 @@
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/cowboy"
+                android:layout_alignParentEnd="true"
                 android:layout_marginTop="-5dp"
                 android:layout_marginEnd="-10dp"
-                android:layout_alignParentEnd="true"/>
+                android:src="@drawable/cowboy" />
 
         </RelativeLayout>
 
@@ -76,8 +76,7 @@
             <ImageView
                 android:layout_width="170dp"
                 android:layout_height="200dp"
-                android:src="@drawable/theantanddove"
-                />
+                android:src="@drawable/theantanddove" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,15 +91,15 @@
 
             <Button
                 android:id="@+id/read2"
-                android:layout_alignParentEnd="true"
                 android:layout_width="132dp"
                 android:layout_height="40dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/button_style"
                 android:padding="2dp"
-                android:text="@string/listen"/>
+                android:text="@string/listen" />
 
         </RelativeLayout>
 
@@ -111,25 +110,25 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/green"
-                android:layout_margin="20dp">
+                android:layout_margin="20dp"
+                android:background="@color/green">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="25dp"
                     android:text="@string/the_onion"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:fontFamily="sans-serif"
-                    android:padding="25dp"/>
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/read3"
                     android:layout_width="132dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginStart="10dp"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_style"
                     android:padding="2dp"
                     android:text="@string/listen" />
@@ -140,9 +139,9 @@
             <ImageView
                 android:layout_width="180dp"
                 android:layout_height="200dp"
-                android:src="@drawable/theonion"
+                android:layout_alignParentEnd="true"
                 android:layout_marginTop="-40dp"
-                android:layout_alignParentEnd="true"/>
+                android:src="@drawable/theonion" />
 
         </RelativeLayout>
 
@@ -161,24 +160,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/speak_first"
-                android:textSize="30sp"
-                android:fontFamily="sans-serif"
-                android:textColor="@color/white"
                 android:layout_alignParentEnd="true"
-                android:padding="25dp"/>
+                android:fontFamily="sans-serif"
+                android:padding="25dp"
+                android:text="@string/speak_first"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/read4"
                 android:layout_width="132dp"
                 android:layout_height="40dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/button_style"
                 android:padding="2dp"
-                android:text="@string/listen"
-                android:layout_alignParentEnd="true"/>
+                android:text="@string/listen" />
 
         </RelativeLayout>
 
@@ -189,28 +188,28 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@color/teal_700"
-                android:layout_margin="20dp">
+                android:layout_margin="20dp"
+                android:background="@color/teal_700">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="25dp"
                     android:text="@string/ants_and_pen"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
-                    android:fontFamily="sans-serif"
-                    android:padding="25dp"/>
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/read5"
                     android:layout_width="132dp"
                     android:layout_height="40dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginStart="10dp"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/button_style"
                     android:padding="2dp"
-                    android:text="@string/listen"/>
+                    android:text="@string/listen" />
 
 
             </RelativeLayout>
@@ -218,9 +217,9 @@
             <ImageView
                 android:layout_width="190dp"
                 android:layout_height="200dp"
-                android:src="@drawable/theants"
+                android:layout_alignParentEnd="true"
                 android:layout_marginTop="-40dp"
-                android:layout_alignParentEnd="true"/>
+                android:src="@drawable/theants" />
 
         </RelativeLayout>
 

@@ -4,7 +4,6 @@
     <string name="register">Register</string>
     <string name="email">Email</string>
     <string name="sign_up">Sign Up</string>
-    <string name="button">Button</string>
     <string name="already_have_an_account_login_here">Already have an account ? Login here</string>
     <string name="confirmpassword">ConfirmPassword</string>
     <string name="forgot_password">Forgot Password ?</string>
@@ -14,7 +13,6 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="read">Read</string>
     <string name="stories">Stories</string>
     <string name="abczone">ABCZone</string>
@@ -44,5 +42,10 @@
     </string-array>
 
     <string name="hyperlinks">This application was created by<a href="https://www.linkedin.com/in/rinesa-muharremi/"> RM</a> and<a href="https://www.linkedin.com/in/linda-imeri-40bbb5197/"> LI</a>.</string>
+    <string name="home">Home</string>
+    <string name="language">Language</string>
+    <string name="profile">Profile</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
 
 </resources>

@@ -33,16 +33,16 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:background="@color/black"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -55,20 +55,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Apple"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:orientation="vertical"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/apples"
@@ -80,10 +80,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Apples"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
 
             </LinearLayout>
@@ -92,16 +92,16 @@
 
 
         <LinearLayout
-            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:background="@color/black"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -114,20 +114,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Banana"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:orientation="vertical"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/bananas"
@@ -139,10 +139,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Bananas"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
 
             </LinearLayout>
@@ -150,16 +150,16 @@
         </LinearLayout>
 
         <LinearLayout
-            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:background="@color/black"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -172,20 +172,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Orange"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:orientation="vertical"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/oranges"
@@ -197,26 +197,26 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Oranges"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:background="@color/black"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -229,20 +229,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Carrot"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:orientation="vertical"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/carrots"
@@ -254,26 +254,26 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Carrots"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:background="@color/black"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -286,20 +286,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Peper"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:orientation="vertical"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/peppers"
@@ -311,26 +311,26 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Peppers"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:background="@color/black"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:background="@color/black"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
                 android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
                 <ImageView
@@ -343,20 +343,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Tomato"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:orientation="vertical"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/tomatos"
@@ -368,10 +368,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:layout_gravity="center"
                     android:text="Tomatos"
-                    android:layout_gravity="center"/>
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 

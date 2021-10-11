@@ -40,6 +40,7 @@
             android:layout_marginTop="-110dp"
             android:background="@drawable/round_corner"
             android:backgroundTint="#FFFFFF">
+
             <ImageView
                 android:layout_width="400dp"
                 android:layout_height="149dp"
@@ -84,20 +85,20 @@
 
             <ImageView
                 android:id="@+id/Dog"
-                app:srcCompat="@drawable/dog"
                 android:layout_width="187dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/dog" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dog"
-                android:textStyle="bold|italic"
-                android:textSize="50sp"
-                android:fontFamily="sans-serif"
-                android:textColor="@color/white"
                 android:layout_alignParentEnd="true"
-                android:padding="25dp"/>
+                android:fontFamily="sans-serif"
+                android:padding="25dp"
+                android:text="Dog"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
 
         </RelativeLayout>
 
@@ -109,20 +110,20 @@
 
             <ImageView
                 android:id="@+id/cow"
-                app:srcCompat="@drawable/bear"
                 android:layout_width="187dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/bear" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bear"
-                android:textStyle="bold|italic"
-                android:textSize="50sp"
-                android:fontFamily="sans-serif"
-                android:textColor="@color/white"
                 android:layout_alignParentEnd="true"
-                android:padding="25dp"/>
+                android:fontFamily="sans-serif"
+                android:padding="25dp"
+                android:text="Bear"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
 
         </RelativeLayout>
 
@@ -134,20 +135,20 @@
 
             <ImageView
                 android:id="@+id/Tiger"
-                app:srcCompat="@drawable/tiger"
                 android:layout_width="187dp"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/tiger" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tiger"
-                android:textStyle="bold|italic"
-                android:textSize="50sp"
-                android:fontFamily="sans-serif"
-                android:textColor="@color/white"
                 android:layout_alignParentEnd="true"
-                android:padding="25dp"/>
+                android:fontFamily="sans-serif"
+                android:padding="25dp"
+                android:text="Tiger"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
 
         </RelativeLayout>
 
@@ -159,20 +160,19 @@
 
             <ImageView
                 android:id="@+id/Lion"
-                app:srcCompat="@drawable/lion"
                 android:layout_width="187dp"
                 android:layout_height="match_parent"
-                />
+                app:srcCompat="@drawable/lion" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lion"
-                android:textStyle="bold|italic"
-                android:textSize="50sp"
-                android:textColor="@color/white"
                 android:layout_alignParentEnd="true"
-                android:padding="25dp"/>
+                android:padding="25dp"
+                android:text="Lion"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
 
         </RelativeLayout>
 
@@ -191,12 +191,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Elephant"
-                android:textStyle="bold|italic"
-                android:textSize="50sp"
-                android:textColor="@color/white"
                 android:layout_alignParentEnd="true"
-                android:padding="25dp"/>
+                android:padding="25dp"
+                android:text="Elephant"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
 
         </RelativeLayout>
 

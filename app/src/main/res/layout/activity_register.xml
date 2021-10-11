@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/orange"
+    android:id="@+id/content"
     tools:context=".Register">
 
 
@@ -36,29 +37,29 @@
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="16dp"
-            app:backgroundTint="@color/orange"
-            android:textColorHint="@color/gray"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="12dp"
             android:ems="12"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:paddingStart="12dp"
-            android:paddingEnd="12dp" />
+            android:paddingEnd="12dp"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/orange" />
 
         <EditText
             android:id="@+id/Password"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="16dp"
-            app:backgroundTint="@color/orange"
-            android:textColorHint="@color/gray"
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="12dp"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="12dp"
-            android:paddingEnd="12dp" />
+            android:paddingEnd="12dp"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/orange" />
 
 
         <EditText
@@ -67,15 +68,15 @@
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
-            app:backgroundTint="@color/orange"
-            android:textColorHint="@color/gray"
             android:drawableStart="@drawable/name"
             android:drawablePadding="12dp"
             android:ems="12"
             android:hint="@string/child_s_name"
             android:inputType="text"
             android:paddingStart="12dp"
-            android:paddingEnd="12dp" />
+            android:paddingEnd="12dp"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/orange" />
 
         <EditText
             android:id="@+id/age"
@@ -83,15 +84,15 @@
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
-            app:backgroundTint="@color/orange"
-            android:textColorHint="@color/gray"
             android:drawableStart="@drawable/age"
             android:drawablePadding="12dp"
             android:ems="12"
             android:hint="Age"
             android:inputType="number"
             android:paddingStart="12dp"
-            android:paddingEnd="12dp" />
+            android:paddingEnd="12dp"
+            android:textColorHint="@color/gray"
+            app:backgroundTint="@color/orange" />
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -99,10 +100,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="5dp"
-            android:textColor="@color/white"
             android:background="@drawable/button_style"
             android:text="@string/sign_up"
-            />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

@@ -10,16 +10,17 @@ import android.widget.ImageView;
 
 public class Fruits extends AppCompatActivity {
     private ImageView back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fruits);
 
-        back=(ImageView) findViewById(R.id.back_icon);
+        back = (ImageView) findViewById(R.id.back_icon);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Fruits.this,MainZone.class));
+                startActivity(new Intent(Fruits.this, MainZone.class));
             }
         });
 
@@ -92,7 +93,8 @@ public class Fruits extends AppCompatActivity {
                         break;
                     case R.id.peppers:
                         mp6.start();
-                        break;}
+                        break;
+                }
 
             }
         };
@@ -108,8 +110,6 @@ public class Fruits extends AppCompatActivity {
         click10.setOnClickListener(elem);
         click11.setOnClickListener(elem);
         click12.setOnClickListener(elem);
-
-
 
 
     }

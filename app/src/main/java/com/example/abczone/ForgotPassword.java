@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -22,31 +23,30 @@ public class ForgotPassword extends AppCompatActivity implements View.OnClickLis
     private EditText emailReset;
     private Button resetPassword;
     private ImageView back;
-    FirebaseAuth auth;
+    FirebaseAuth authenticate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
 
-        back=(ImageView) findViewById(R.id.back_icon);
+        back = (ImageView) findViewById(R.id.back_icon);
         back.setOnClickListener(this);
 
-        emailReset=(EditText) findViewById(R.id.emailReset);
-        resetPassword=(Button) findViewById(R.id.reset);
-
-        auth=FirebaseAuth.getInstance();
-
+        emailReset = (EditText) findViewById(R.id.emailReset);
+        resetPassword = (Button) findViewById(R.id.resetPassword);
+        authenticate = FirebaseAuth.getInstance();
 
     }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.back_icon:
-                startActivity(new Intent(this,Login.class));
+                startActivity(new Intent(this, Login.class));
                 break;
 
-            case R.id.reset:
+            case R.id.resetPassword:
                 resetPassword();
                 break;
 
@@ -54,31 +54,37 @@ public class ForgotPassword extends AppCompatActivity implements View.OnClickLis
     }
 
     private void resetPassword() {
-        String email=emailReset.getText().toString().trim();
+        String emailRes = emailReset.getText().toString().trim();
 
-        if(email.isEmpty()){
+        if (emailRes.isEmpty()) {
             emailReset.setError("Email is required!");
             emailReset.requestFocus();
             return;
         }
 
-        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-           emailReset.setError("Please write valid email!");
+        if (!Patterns.EMAIL_ADDRESS.matcher(emailRes).matches()) {
+            emailReset.setError("Please write valid email!");
             emailReset.requestFocus();
             return;
         }
 
-        auth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
+            authenticate.sendPasswordResetEmail(emailRes).addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
 
-                if(task.isSuccessful()){
-                    Toast.makeText(ForgotPassword.this,"Check your email",Toast.LENGTH_LONG).show();
+                    if (task.isSuccessful()) {
+                        Toast.makeText(ForgotPassword.this, "Check your email", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(ForgotPassword.this, "Try again , something wrong happened", Toast.LENGTH_LONG).show();
+                    }
                 }
-                else{
-                    Toast.makeText(ForgotPassword.this,"Try again , something wrong happened",Toast.LENGTH_LONG).show();
+
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_SHORT).show();
                 }
-            }
-        });
+            });
+
     }
 }

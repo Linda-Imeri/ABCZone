@@ -10,16 +10,17 @@ import android.widget.ImageView;
 
 public class Numbers extends AppCompatActivity {
     private ImageView back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        back=(ImageView) findViewById(R.id.back_icon);
+        back = (ImageView) findViewById(R.id.back_icon);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Numbers.this,MainZone.class));
+                startActivity(new Intent(Numbers.this, MainZone.class));
             }
         });
 
@@ -29,7 +30,7 @@ public class Numbers extends AppCompatActivity {
         ImageView click4 = (ImageView) findViewById(R.id.four);
         ImageView click5 = (ImageView) findViewById(R.id.five);
         ImageView click6 = (ImageView) findViewById(R.id.six);
-        ImageView click7= (ImageView) findViewById(R.id.seven);
+        ImageView click7 = (ImageView) findViewById(R.id.seven);
         ImageView click8 = (ImageView) findViewById(R.id.eight);
         ImageView click9 = (ImageView) findViewById(R.id.nine);
         ImageView click10 = (ImageView) findViewById(R.id.ten);
@@ -69,7 +70,6 @@ public class Numbers extends AppCompatActivity {
                     case R.id.six:
                         mp6.start();
                         break;
-
                     case R.id.seven:
                         mp3.start();
                         break;
@@ -81,7 +81,8 @@ public class Numbers extends AppCompatActivity {
                         break;
                     case R.id.ten:
                         mp6.start();
-                        break;}
+                        break;
+                }
             }
         };
         click1.setOnClickListener(elem);
