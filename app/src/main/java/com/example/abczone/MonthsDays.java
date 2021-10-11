@@ -31,10 +31,10 @@ public class MonthsDays extends AppCompatActivity {
             InputStream inputStream = getApplicationContext().getAssets().open("sample.xml");
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(inputStream, null);
-            ArrayList<Days_Class> countries = parseXML(parser);
+            ArrayList<Days_Class> months = parseXML(parser);
             String text = "";
-            for (Days_Class daysClass : countries) {
-                text += " Month: " + daysClass.getName() + " has " + daysClass.getCapital() + "days." + "\n\n";
+            for (Days_Class daysClass : months) {
+                text += " Month: " + daysClass.getName() + " has " + daysClass.getCapital() + " days." + "\n\n";
             }
             textView.setText(text);
         } catch (XmlPullParserException e) {
@@ -45,38 +45,38 @@ public class MonthsDays extends AppCompatActivity {
     }
 
     private ArrayList<Days_Class> parseXML(XmlPullParser parser) throws XmlPullParserException, IOException {
-        ArrayList<Days_Class> countries = null;
+        ArrayList<Days_Class> months = null;
         int eventType = parser.getEventType();
-        Days_Class daysClass = null;
+        Days_Class month = null;
 
         while (eventType != XmlPullParser.END_DOCUMENT) {
             String name;
             switch (eventType) {
                 case XmlPullParser.START_DOCUMENT:
-                    countries = new ArrayList();
+                    months = new ArrayList();
                     break;
                 case XmlPullParser.START_TAG:
                     name = parser.getName();
-                    if (name.equals("country")) {
-                        daysClass = new Days_Class();
-                        daysClass.id = parser.getAttributeValue(null, "id ");
-                    } else if (daysClass != null) {
+                    if (name.equals("month")) {
+                        month = new Days_Class();
+                        month.id = parser.getAttributeValue(null, "id ");
+                    } else if (month != null) {
                         if (name.equals("name")) {
-                            daysClass.name = parser.nextText();
+                            month.name = parser.nextText();
                         } else if (name.equals("capital")) {
-                            daysClass.capital = parser.nextText();
+                            month.capital = parser.nextText();
                         }
                     }
                     break;
                 case XmlPullParser.END_TAG:
                     name = parser.getName();
-                    if (name.equalsIgnoreCase("country") && daysClass != null) {
-                        countries.add(daysClass);
+                    if (name.equalsIgnoreCase("month") && month != null) {
+                        months.add(month);
                     }
             }
             eventType = parser.next();
         }
-        return countries;
+        return months;
     }
 
 }
