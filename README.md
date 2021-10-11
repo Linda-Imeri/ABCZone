@@ -34,3 +34,6 @@ Ofruesi - Age og Learning, Inc.
 <br>Përputhshmëria- Android.
 <br>Gjuha-Anglisht.
 <br>Mosha- 0-7.
+<br><br>
+<b>Images</b>
+![1](https://user-images.githubusercontent.com/58374578/136781965-632e9d76-403d-483a-a1af-de6aa6283c24.PNG)
